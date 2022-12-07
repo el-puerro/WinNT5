@@ -58,6 +58,9 @@ NT_UP=0
 
 C_DEFINES=$(C_DEFINES) $(USER_C_DEFINES) -D_USER32_ -DUNICODE -DUSE_MIRRORING -DLANGPACK
 
+### usp debugging interface missing
+C_DEFINES=$(C_DEFINES) -DDBG=0
+
 DLLDEF=..\lpk.def
 
 SOURCES= ..\lpk.rc           \

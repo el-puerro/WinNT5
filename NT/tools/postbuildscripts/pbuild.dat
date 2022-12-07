@@ -66,7 +66,7 @@ BEGIN %RazzleToolPath%\PostBuildScripts\tsclient.cmd
 BEGIN %RazzleToolPath%\PostBuildScripts\fxsclient.cmd
 BEGIN %RazzleToolPath%\PostBuildScripts\twclient.cmd
 OFFICIAL %RazzleToolPath%\PostBuildScripts\capturesourcefilelist.cmd -g ntdev
-BEGIN %RazzleToolPath%\PostBuildScripts\timebomb.cmd
+;BEGIN %RazzleToolPath%\PostBuildScripts\timebomb.cmd
 
 END %RazzleToolPath%\PostBuildScripts\fips.cmd
 END %RazzleToolPath%\PostBuildScripts\CDdata.cmd
@@ -155,7 +155,7 @@ END %RazzleToolPath%\PostBuildScripts\msi.cmd
 BEGIN %RazzleToolPath%\PostBuildScripts\tscsetup.cmd
 END %RazzleToolPath%\PostBuildScripts\winnt32msi.cmd
 END %RazzleToolPath%\PostBuildScripts\delayload.cmd
-END %RazzleToolPath%\PostBuildScripts\timebomb.cmd
+;END %RazzleToolPath%\PostBuildScripts\timebomb.cmd
 END %RazzleToolPath%\PostBuildScripts\copyremoteboot.cmd
 END %RazzleToolPath%\PostBuildScripts\copytsc.cmd
 END %RazzleToolPath%\PostBuildScripts\crypto.cmd
@@ -193,14 +193,14 @@ BEGIN %RazzleToolPath%\PostBuildScripts\a2u.pm
 END %RazzleToolPath%\PostBuildScripts\a2u.pm
 
 BEGIN %RazzleToolPath%\PostBuildScripts\DriverCab.cmd
-BEGIN %RazzleToolPath%\PostBuildScripts\sxs_make_asms_cabs.cmd
+;BEGIN %RazzleToolPath%\PostBuildScripts\sxs_make_asms_cabs.cmd
 BEGIN %RazzleToolPath%\PostBuildScripts\catsign.cmd
 END %RazzleToolPath%\PostBuildScripts\catsign.cmd
 
 END %RazzleToolPath%\PostBuildScripts\DriverCab.cmd
 END %RazzleToolPath%\PostBuildScripts\copywow64.cmd
 END %RazzleToolPath%\PostBuildScripts\supporttools.cmd
-END %RazzleToolPath%\PostBuildScripts\sxs_make_asms_cabs.cmd
+;END %RazzleToolPath%\PostBuildScripts\sxs_make_asms_cabs.cmd
 
 
 INCREMENTAL %RazzleToolPath%\PostBuildScripts\BinDiff.pl -a

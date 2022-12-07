@@ -1,8 +1,8 @@
 # The ordering belowing is just a guess. Change it if you need to.
 
 DIRS=           \
-    Base        \
     Windows     \
+    Base        \
     Admin       \
     DS          \
     Shell       \

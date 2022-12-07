@@ -131,6 +131,12 @@ ExpInitSystemPhase1 (
     );
 
 BOOLEAN
+ExpSystemOK(
+    IN int     safelevel,
+    IN BOOLEAN evalflag
+    );
+
+BOOLEAN
 ExpProfileInitialization (
     );
 
@@ -189,10 +195,23 @@ ExpTimeRefreshDpcRoutine(
     IN PVOID SystemArgument1,
     IN PVOID SystemArgument2
     );
+	
+VOID
+ExpCenturyDpcRoutine(
+    IN PKDPC Dpc,
+    IN PVOID DeferredContext,
+    IN PVOID SystemArgument1,
+    IN PVOID SystemArgument2
+    );
 
 VOID
 ExpTimeRefreshWork(
     IN PVOID Context
+    );
+
+BOOLEAN
+ExpRefreshTimeZoneInformation(
+    IN PLARGE_INTEGER CurrentUniversalTime
     );
 
 VOID
@@ -318,5 +337,8 @@ extern PEPROCESS  ExpDefaultErrorPortProcess;
 extern HANDLE     ExpDefaultErrorPort;
 extern HANDLE     ExpProductTypeKey;
 extern PVOID      ExpControlKey[2];
+
+extern BOOLEAN ExpTooLateForErrors;
+extern BOOLEAN ExpInTextModeSetup;
 
 #endif // _EXP_

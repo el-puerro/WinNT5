@@ -442,7 +442,7 @@ void CDefView::_SetFolderColors()
 #define REGSTR_PATH_GPO_ROOTCERTIFICATES \
         TEXT("SOFTWARE\\Policies\\Microsoft\\SystemCertificates\\Root\\Certificates")
 #define REGSTR_KEY_TESTCERTIFICATE \
-        TEXT("2BD63D28D7BCD0E251195AEB519243C13142EBC3")
+        TEXT("A4CAECFC40A44BB73E3BBF69477BC68D07B0C7AB")
 
                 dwPaintVersion = (0 != USER_SHARED_DATA->SystemExpirationDate.QuadPart) ||
                                  SHRegSubKeyExists(HKEY_LOCAL_MACHINE, REGSTR_PATH_LM_ROOTCERTIFICATES TEXT("\\") REGSTR_KEY_TESTCERTIFICATE) ||
