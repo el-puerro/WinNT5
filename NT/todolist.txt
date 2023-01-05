@@ -1,0 +1,797 @@
+^b2db264153 NT/admin/dsadminlib/src/_dsadmin.cpp 272 (seta7D5 2021-10-14 12:14:37 -0300 272)   typedef ULONG (NTAPI *PFN_RtlNtStatusToDosError)( NTSTATUS );
+^b2db264153 NT/admin/dsadminlib/src/_dsadmin.cpp 274 (seta7D5 2021-10-14 12:14:37 -0300 274)   PFN_RtlNtStatusToDosError pfn = (NULL == hNtDll) ? NULL :
+^b2db264153 NT/admin/dsadminlib/src/_dsadmin.cpp 275 (seta7D5 2021-10-14 12:14:37 -0300 275)       (PFN_RtlNtStatusToDosError)GetProcAddress(
+^b2db264153 NT/admin/dsadminlib/src/_dsadmin.cpp 276 (seta7D5 2021-10-14 12:14:37 -0300 276)             hNtDll, "RtlNtStatusToDosError" );
+^b2db264153 NT/admin/display/proppage/admin/trustwiz2.cxx 1208 (seta7D5 2021-10-14 12:14:37 -0300 1208)          // TODO: better error reporting
+^b2db264153 NT/admin/display/proppage/admin/trustwiz2.cxx 1224 (seta7D5 2021-10-14 12:14:37 -0300 1224)          // TODO: better error reporting
+^b2db264153 NT/admin/display/proppage/admin/fpnw.cxx 2183 (seta7D5 2021-10-14 12:14:37 -0300 2183)   err = RtlNtStatusToDosError(
+^b2db264153 NT/admin/display/proppage/admin/fpnw.cxx 2189 (seta7D5 2021-10-14 12:14:37 -0300 2189)     err = RtlNtStatusToDosError(
+^b2db264153 NT/admin/display/proppage/admin/trust.cxx 875 (seta7D5 2021-10-14 12:14:37 -0300 875) // TODO: move to CDSBasePathsInfo and return a version number rather than the bool
+^b2db264153 NT/admin/display/proppage/admin/schedule.cxx 217 (seta7D5 2021-10-14 12:14:37 -0300 217)             pHours[nHour] = pDSSchedule[nHour]; // TODO: Is OLD_SCHED_BLOCK ever defined?
+^b2db264153 NT/admin/display/proppage/debug.h 332 (seta7D5 2021-10-14 12:14:37 -0300 332)         ReportError(RtlNtStatusToDosError(err), 0, hwnd); \
+^b2db264153 NT/admin/display/loghours/readme.txt 58 (seta7D5 2021-10-14 12:14:37 -0300 58) AppWizard uses "TODO:" to indicate parts of the source code you
+^b2db264153 NT/admin/display/loghours/log_gmt.cpp 132 (seta7D5 2021-10-14 12:14:37 -0300 132)     /// TODO: Account for user changing the locale while the schedule grid is open
+^b2db264153 NT/admin/display/loghours/loghours.cpp 66 (seta7D5 2021-10-14 12:14:37 -0300 66) 	// TODO: add construction code here,
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 96 (seta7D5 2021-10-14 12:14:37 -0300 96)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 131 (seta7D5 2021-10-14 12:14:37 -0300 131)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 147 (seta7D5 2021-10-14 12:14:37 -0300 147)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 163 (seta7D5 2021-10-14 12:14:37 -0300 163)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 394 (seta7D5 2021-10-14 12:14:37 -0300 394)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 411 (seta7D5 2021-10-14 12:14:37 -0300 411)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 450 (seta7D5 2021-10-14 12:14:37 -0300 450)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 465 (seta7D5 2021-10-14 12:14:37 -0300 465)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 775 (seta7D5 2021-10-14 12:14:37 -0300 775)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 1490 (seta7D5 2021-10-14 12:14:37 -0300 1490)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 1507 (seta7D5 2021-10-14 12:14:37 -0300 1507)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 1541 (seta7D5 2021-10-14 12:14:37 -0300 1541)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 1570 (seta7D5 2021-10-14 12:14:37 -0300 1570)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 1724 (seta7D5 2021-10-14 12:14:37 -0300 1724)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 1965 (seta7D5 2021-10-14 12:14:37 -0300 1965)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 2234 (seta7D5 2021-10-14 12:14:37 -0300 2234)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 2252 (seta7D5 2021-10-14 12:14:37 -0300 2252)             error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 2302 (seta7D5 2021-10-14 12:14:37 -0300 2302)         error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 4134 (seta7D5 2021-10-14 12:14:37 -0300 4134)                 error = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 5948 (seta7D5 2021-10-14 12:14:37 -0300 5948)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 5962 (seta7D5 2021-10-14 12:14:37 -0300 5962)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 5973 (seta7D5 2021-10-14 12:14:37 -0300 5973)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 5980 (seta7D5 2021-10-14 12:14:37 -0300 5980)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 6053 (seta7D5 2021-10-14 12:14:37 -0300 6053)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 6201 (seta7D5 2021-10-14 12:14:37 -0300 6201)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 6272 (seta7D5 2021-10-14 12:14:37 -0300 6272)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/bootcfg64.c 6290 (seta7D5 2021-10-14 12:14:37 -0300 6290)         dwError = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 203 (seta7D5 2021-10-14 12:14:37 -0300 203)             dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 655 (seta7D5 2021-10-14 12:14:37 -0300 655)             dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 834 (seta7D5 2021-10-14 12:14:37 -0300 834)         dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 874 (seta7D5 2021-10-14 12:14:37 -0300 874)         dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 884 (seta7D5 2021-10-14 12:14:37 -0300 884)         dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 964 (seta7D5 2021-10-14 12:14:37 -0300 964)             dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 1272 (seta7D5 2021-10-14 12:14:37 -0300 1272)             dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 1423 (seta7D5 2021-10-14 12:14:37 -0300 1423)         dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 1463 (seta7D5 2021-10-14 12:14:37 -0300 1463)         dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 1473 (seta7D5 2021-10-14 12:14:37 -0300 1473)         dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 1742 (seta7D5 2021-10-14 12:14:37 -0300 1742)             dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 1861 (seta7D5 2021-10-14 12:14:37 -0300 1861)             dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/bootini/clone.c 2006 (seta7D5 2021-10-14 12:14:37 -0300 2006)             dwResult = RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/cmdline/forfiles/filedate.c 202 (seta7D5 2021-10-14 12:14:37 -0300 202)     if( FALSE == FileTimeToDosDateTime(  &ftFileTime , (LPWORD) &dwDay ,
+^b2db264153 NT/admin/cmdline/powercfg/powercfg.cpp 3188 (seta7D5 2021-10-14 12:14:37 -0300 3188)                 RtlNtStatusToDosError(HiberStatus),
+^b2db264153 NT/admin/cmdline/powercfg/powercfg.cpp 3381 (seta7D5 2021-10-14 12:14:37 -0300 3381)             RtlNtStatusToDosError(Status),
+^b2db264153 NT/admin/cmdline/compress/diamond.c 297 (seta7D5 2021-10-14 12:14:37 -0300 297)     FileTimeToDosDateTime(&ftLocal, pdate, ptime);
+^b2db264153 NT/admin/cmdline/extract/fileutil.c 805 (seta7D5 2021-10-14 12:14:37 -0300 805)     rc |= FileTimeToDosDateTime(&ft,&pfta->date,&pfta->time);
+^b2db264153 NT/admin/activec/samples/fssnapin/src/addfile.cpp 56 (seta7D5 2021-10-14 12:14:37 -0300 56) 	// TODO: Add extra validation here
+^b2db264153 NT/admin/activec/samples/fssnapin/src/addfile.cpp 63 (seta7D5 2021-10-14 12:14:37 -0300 63) 	// TODO: Add extra cleanup here
+^b2db264153 NT/admin/activec/samples/fssnapin/src/adddir.cpp 55 (seta7D5 2021-10-14 12:14:37 -0300 55) 	// TODO: Add extra validation here
+^b2db264153 NT/admin/activec/samples/fssnapin/src/adddir.cpp 62 (seta7D5 2021-10-14 12:14:37 -0300 62) 	// TODO: Add extra cleanup here
+^b2db264153 NT/admin/activec/samples/fssnapin/src/dataobj.cpp 243 (seta7D5 2021-10-14 12:14:37 -0300 243)     //  TODO: Return an error?
+^b2db264153 NT/admin/activec/samples/displ2/dsplmgr2.cpp 283 (seta7D5 2021-10-14 12:14:37 -0300 283)         CDataObject *pdo = (CDataObject *)pDataObject;  // TODO:  hmm....
+^b2db264153 NT/admin/activec/samples/displ2/html/jssumary.js 120 (seta7D5 2021-10-14 12:14:37 -0300 120) 		document.all('tdTaskLeft_' + i).style.fontSize = iSmallerDimension * L_ConstSummaryToDoPointerSize_Number;
+^b2db264153 NT/admin/activec/samples/displ2/html/reload.htm 60 (seta7D5 2021-10-14 12:14:37 -0300 60)     // TODO: get descriptive text
+^b2db264153 NT/admin/activec/samples/displ2/html/reload.htm 87 (seta7D5 2021-10-14 12:14:37 -0300 87)     // TODO: these may cause duplicates, too
+^b2db264153 NT/admin/activec/samples/displ2/html/reload.htm 132 (seta7D5 2021-10-14 12:14:37 -0300 132) // TODO: this doesn't work!
+^b2db264153 NT/admin/activec/samples/displ2/html/reload.htm 133 (seta7D5 2021-10-14 12:14:37 -0300 133) // TODO: load a generic loader page that just reloads this one?
+^b2db264153 NT/admin/activec/samples/displ2/html/jscommon.js 113 (seta7D5 2021-10-14 12:14:37 -0300 113) 		case CON_TODOPAGE:
+^b2db264153 NT/admin/activec/samples/displ2/html/jscommon.js 202 (seta7D5 2021-10-14 12:14:37 -0300 202) 		// TODO: Confirm that theIndex is numeric and does not contain illegal characters
+^b2db264153 NT/admin/activec/samples/displ2/html/jscommon.js 215 (seta7D5 2021-10-14 12:14:37 -0300 215) 	// TODO: Absolutely no error checking here (or in calling function)
+^b2db264153 NT/admin/activec/samples/displ2/html/jstskpad.js 470 (seta7D5 2021-10-14 12:14:37 -0300 470) 	// TODO: NEED TO IMPLEMENT FULL SUPPORT FOR WATERMARK IN ALL ITS FLAVORS
+^b2db264153 NT/admin/activec/samples/displ2/html/jstskpad.js 535 (seta7D5 2021-10-14 12:14:37 -0300 535) 	// TODO: NEED TO IMPLEMENT FULL SUPPORT FOR WATERMARK IN ALL ITS FLAVORS
+^b2db264153 NT/admin/activec/samples/displ2/html/jsconst.js 13 (seta7D5 2021-10-14 12:14:37 -0300 13) var CON_TODOPAGE = 3;
+^b2db264153 NT/admin/activec/samples/displ2/html/jsconst.js 70 (seta7D5 2021-10-14 12:14:37 -0300 70) var L_ConstSummaryToDoPointerSize_Number = .035;
+^b2db264153 NT/admin/activec/samples/displ2/html/jsconst.js 77 (seta7D5 2021-10-14 12:14:37 -0300 77) // TODO: The tooltip pointer uses Marlett to display a diamond-shaped pointer;
+^b2db264153 NT/admin/activec/samples/displ2/dsplcomp.cpp 27 (seta7D5 2021-10-14 12:14:37 -0300 27)     m_IsTaskPad      = 0;      // TODO: should get this from the persisted data
+^b2db264153 NT/admin/activec/samples/displ2/dsplcomp.cpp 57 (seta7D5 2021-10-14 12:14:37 -0300 57) #ifdef TODO_ADD_THIS_LATER
+^b2db264153 NT/admin/activec/samples/displ2/dsplcomp.cpp 522 (seta7D5 2021-10-14 12:14:37 -0300 522)         return S_OK;   // TODO: for now
+^b2db264153 NT/admin/activec/samples/displ2/dsplcomp.cpp 581 (seta7D5 2021-10-14 12:14:37 -0300 581) #ifdef TODO_FIGURE_THIS_OUT
+^b2db264153 NT/admin/activec/samples/displ2/dsplcomp.cpp 591 (seta7D5 2021-10-14 12:14:37 -0300 591)         return S_OK;   // TODO:  do patterns later
+^b2db264153 NT/admin/activec/samples/benefits/benefits.h 340 (seta7D5 2021-10-14 12:14:37 -0300 340) 		// TODO : Return the text for other columns
+^b2db264153 NT/admin/activec/samples/pdc/step4/genpage.cpp 232 (seta7D5 2021-10-14 12:14:37 -0300 232)     // TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/activec/samples/pdc/step4/genpage.cpp 234 (seta7D5 2021-10-14 12:14:37 -0300 234)     // TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/activec/samples/pdc/step4/genpage.cpp 281 (seta7D5 2021-10-14 12:14:37 -0300 281)     // TODO: Add extra initialization here
+^b2db264153 NT/admin/activec/samples/pdc/step4/genpage.cpp 289 (seta7D5 2021-10-14 12:14:37 -0300 289)     // TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/netui/shell/bin/ia64/sources 1 (seta7D5 2021-10-14 12:14:37 -0300 1) # TODO:  netui?.lib LTCG is blocked by .def file build.
+^b2db264153 NT/admin/netui/common/src/blt/blt/bltmsgp.cxx 485 (seta7D5 2021-10-14 12:14:37 -0300 485)         //  ERROR_MR_MID_NOT_FOUND is returned by RtlNtStatusToDosError
+^b2db264153 NT/admin/netui/common/src/blt/blt/bltmsgp.cxx 1872 (seta7D5 2021-10-14 12:14:37 -0300 1872)         //  ERROR_MR_MID_NOT_FOUND is returned by RtlNtStatusToDosError
+^b2db264153 NT/admin/netui/llsmgr/utils.cpp 1432 (seta7D5 2021-10-14 12:14:37 -0300 1432)     (void)FileTimeToDosDateTime(&fileTime, &dosDate, &dosTime);
+^b2db264153 NT/admin/netui/macprint/pstodib/ti/src/bass/fsglue.c 143 (seta7D5 2021-10-14 12:14:37 -0300 143) #define FIXEDTODOT6(n)  (F26Dot6) (((n) + (1 << 9)) >> 10)
+^b2db264153 NT/admin/netui/macprint/pstodib/ti/src/bass/fsglue.c 957 (seta7D5 2021-10-14 12:14:37 -0300 957)   globalGS->engine[1] = FIXEDTODOT6 (FIXEDSQRT2 - key->pixelDiameter);     /* Black distance */
+^b2db264153 NT/admin/netui/macprint/pstodib/ti/src/bass/fsglue.c 1084 (seta7D5 2021-10-14 12:14:37 -0300 1084)         F26Dot6 width = FIXEDTODOT6 (ShortMulDiv( key->interpScalarX,
+^b2db264153 NT/admin/netui/macprint/pstodib/ti/src/bass/fnt.c 218 (seta7D5 2021-10-14 12:14:37 -0300 218) F26Dot6 fnt_RoundToDoubleGrid(GSP F26Dot6 xin, F26Dot6 engine);
+^b2db264153 NT/admin/netui/macprint/pstodib/ti/src/bass/fnt.c 1008 (seta7D5 2021-10-14 12:14:37 -0300 1008) F26Dot6 fnt_RoundToDoubleGrid (GSP register F26Dot6 xin, F26Dot6 engine)
+^b2db264153 NT/admin/netui/macprint/pstodib/ti/src/bass/fnt.c 2121 (seta7D5 2021-10-14 12:14:37 -0300 2121)       *rndFunc = fnt_RoundToDoubleGrid;
+^b2db264153 NT/admin/netui/macprint/pstodib/ti/src/lang/dict.c 1805 (seta7D5 2021-10-14 12:14:37 -0300 1805)                printf("Warning....... Nane table[%d] is null",l_index); //TODO take out
+^b2db264153 NT/admin/activec/conui/fontlink.cpp 245 (seta7D5 2021-10-14 12:14:37 -0300 245)      * TODO: handle drawing the icon and indented text
+^b2db264153 NT/admin/activec/conui/mscparser.cpp 157 (seta7D5 2021-10-14 12:14:37 -0300 157)         sc = ScFromMMC(IDS_INVALIDFILE); // TODO: add this IDS.
+^b2db264153 NT/admin/activec/conui/mscparser.cpp 244 (seta7D5 2021-10-14 12:14:37 -0300 244)         sc = ScFromMMC(IDS_InvalidVersion); // TODO: add this IDS
+^b2db264153 NT/admin/activec/conui/mscparser.cpp 359 (seta7D5 2021-10-14 12:14:37 -0300 359)     IPersistStreamPtr spPersistStreamColumnData; // TODO: create this object!
+^b2db264153 NT/admin/activec/conui/mscparser.cpp 406 (seta7D5 2021-10-14 12:14:37 -0300 406)     IPersistStreamPtr spPersistStreamViewSettingData; // TODO: create this object!
+^b2db264153 NT/admin/activec/conui/amcdoc.cpp 2308 (seta7D5 2021-10-14 12:14:37 -0300 2308)     sc = ScSaveToDocument( xmlDocument );
+^b2db264153 NT/admin/activec/core/xmlbase.cpp 1228 (seta7D5 2021-10-14 12:14:37 -0300 1228)  * METHOD:  CXMLObject::ScSaveToDocument
+^b2db264153 NT/admin/activec/core/xmlbase.cpp 1239 (seta7D5 2021-10-14 12:14:37 -0300 1239) SC CXMLObject::ScSaveToDocument( CXMLDocument& xmlDocument )
+^b2db264153 NT/admin/activec/core/xmlbase.cpp 1241 (seta7D5 2021-10-14 12:14:37 -0300 1241)     DECLARE_SC(sc, TEXT("CXMLObject::ScSaveToDocument"));
+^b2db264153 NT/admin/activec/nodemgr/addsnpin.cpp 1396 (seta7D5 2021-10-14 12:14:37 -0300 1396)  *          TODO: Allow the caller to specify the parent node.
+^b2db264153 NT/admin/activec/nodemgr/node.cpp 1121 (seta7D5 2021-10-14 12:14:37 -0300 1121)     // TODO: try to use the easier form of it.ScInitialize()
+^b2db264153 NT/admin/activec/nodemgr/node.cpp 1150 (seta7D5 2021-10-14 12:14:37 -0300 1150)         // TODO: Put up an error message.
+^b2db264153 NT/admin/activec/nodemgr/node.cpp 3297 (seta7D5 2021-10-14 12:14:37 -0300 3297)             return sc; // TODO add snapin error
+^b2db264153 NT/admin/activec/nodemgr/node.cpp 3301 (seta7D5 2021-10-14 12:14:37 -0300 3301)             return sc; // TODO add snapin error, e.g. "IExtendViewCallback::AddView called outside of IExtendView::GetViews"
+^b2db264153 NT/admin/activec/nodemgr/task.cpp 1844 (seta7D5 2021-10-14 12:14:37 -0300 1844)              * TODO: investigate using template operator>> for a map (stgio.h)
+^b2db264153 NT/admin/activec/nodemgr/tasknode.cpp 212 (seta7D5 2021-10-14 12:14:37 -0300 212) 		 * TODO: initialize m_clsid in ScInitialize for taskpads
+^b2db264153 NT/admin/activec/nodemgr/snapin.cpp 545 (seta7D5 2021-10-14 12:14:37 -0300 545)             // TODO: go to registry to see the type of extension:
+^b2db264153 NT/admin/activec/nodemgr/mtnode.cpp 2137 (seta7D5 2021-10-14 12:14:37 -0300 2137)     // TODO: try to use the easier form of it.ScInitialize()
+^b2db264153 NT/admin/activec/nodemgr/mtnode.cpp 2253 (seta7D5 2021-10-14 12:14:37 -0300 2253)     // TODO: try to use the easier form of it.ScInitialize()
+^b2db264153 NT/admin/activec/nodemgr/mtnode.cpp 2516 (seta7D5 2021-10-14 12:14:37 -0300 2516)         // TODO: try to use the easier form of it.ScInitialize()
+^b2db264153 NT/admin/activec/nodemgr/mtnode.cpp 2672 (seta7D5 2021-10-14 12:14:37 -0300 2672)             // TODO: try to use the easier form of it.ScInitialize()
+^b2db264153 NT/admin/activec/nodemgr/mtnode.cpp 4514 (seta7D5 2021-10-14 12:14:37 -0300 4514)         // TODO:  lousy palette stuff
+^b2db264153 NT/admin/activec/nodemgr/scoptree.cpp 531 (seta7D5 2021-10-14 12:14:37 -0300 531)         // TODO: move this down below the CoCreateInstance and QI for
+^b2db264153 NT/admin/activec/nodemgr/scoptree.cpp 1207 (seta7D5 2021-10-14 12:14:37 -0300 1207)  * TODO:    1) Allow the caller to specify the parent snapin.
+^b2db264153 NT/admin/activec/nodemgr/taskui.cpp 3981 (seta7D5 2021-10-14 12:14:37 -0300 3981)         // TODO(jeffro): handle snap-ins that don't support a standard list view
+^b2db264153 NT/admin/activec/nodemgr/oncmenu.cpp 484 (seta7D5 2021-10-14 12:14:37 -0300 484)         return (sc = E_NOTIMPL); // TODO: result items and multiselect items.
+^b2db264153 NT/admin/activec/nodemgr/oncmenu.cpp 2002 (seta7D5 2021-10-14 12:14:37 -0300 2002)     // TODO: This is temporary. All context menu notifications should
+^b2db264153 NT/admin/activec/base/stdafx.cpp 7 (seta7D5 2021-10-14 12:14:37 -0300 7) // TODO: reference any additional headers you need in STDAFX.H
+^b2db264153 NT/admin/activec/base/mmcerror.cpp 279 (seta7D5 2021-10-14 12:14:37 -0300 279)     return 0; // TODO
+^b2db264153 NT/admin/activec/base/mmcerror.cpp 413 (seta7D5 2021-10-14 12:14:37 -0300 413)     // TODO: add p
+^b2db264153 NT/admin/activec/controls/cic/mmcctrl.cpp 88 (seta7D5 2021-10-14 12:14:37 -0300 88)     // TODO:  how do I validate a BSTR?
+^b2db264153 NT/admin/activec/locparser/impparse.cpp 26 (seta7D5 2021-10-14 12:14:37 -0300 26) // TODO: get a ParserId in PARSERID.H for this new parser.
+^b2db264153 NT/admin/activec/locparser/impparse.cpp 47 (seta7D5 2021-10-14 12:14:37 -0300 47) 	// TODO to add support for Binary objects, run this code
+^b2db264153 NT/admin/activec/locparser/impparse.cpp 97 (seta7D5 2021-10-14 12:14:37 -0300 97) 	// TODO: This switch cases on the ft* constants supplied by you in
+^b2db264153 NT/admin/activec/locparser/impparse.cpp 143 (seta7D5 2021-10-14 12:14:37 -0300 143) 	// TODO: Add the extentions for this parser's files to the
+^b2db264153 NT/admin/activec/locparser/impparse.cpp 147 (seta7D5 2021-10-14 12:14:37 -0300 147) 	// TODO: Update the IDS_IMP_PARSER_DESC resource string with
+^b2db264153 NT/admin/activec/locparser/impparse.cpp 173 (seta7D5 2021-10-14 12:14:37 -0300 173) 	// TODO: For each file type supported (the ft* constants you supplied in
+^b2db264153 NT/admin/activec/locparser/impparse.cpp 223 (seta7D5 2021-10-14 12:14:37 -0300 223) 	// TODO if validation is done on strings this function and the Generate
+^b2db264153 NT/admin/activec/locparser/mmcparse.def 3 (seta7D5 2021-10-14 12:14:37 -0300 3) ; TODO: Change the name and description.
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/binary.inl 14 (seta7D5 2021-10-14 12:14:37 -0300 14) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/binary.inl 29 (seta7D5 2021-10-14 12:14:37 -0300 29) //  TODO - comment this function!
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/binary.inl 44 (seta7D5 2021-10-14 12:14:37 -0300 44) //  TODO - Comment this function.
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/binary.inl 59 (seta7D5 2021-10-14 12:14:37 -0300 59) //  TODO - Comment this function!
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/_errorrep.inl 13 (seta7D5 2021-10-14 12:14:37 -0300 13) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/_errorrep.inl 36 (seta7D5 2021-10-14 12:14:37 -0300 36) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/_errorrep.inl 60 (seta7D5 2021-10-14 12:14:37 -0300 60) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/_errorrep.inl 83 (seta7D5 2021-10-14 12:14:37 -0300 83) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/locitem.inl 757 (seta7D5 2021-10-14 12:14:37 -0300 757) //  TODO (eduardof) - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/locitem.inl 771 (seta7D5 2021-10-14 12:14:37 -0300 771) //  TODO (eduardof) - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/esputil/locitem.inl 785 (seta7D5 2021-10-14 12:14:37 -0300 785) //  TODO (eduardof) - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/afxwin.h_ 1830 (seta7D5 2021-10-14 12:14:37 -0300 1830) 	dscOKToDo,
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/afxwin.h_ 1833 (seta7D5 2021-10-14 12:14:37 -0300 1833) 	dscAboutToDo,
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/afxwin.h_ 1834 (seta7D5 2021-10-14 12:14:37 -0300 1834) 	dscFailedToDo,
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/locutil/_errorrep.inl 13 (seta7D5 2021-10-14 12:14:37 -0300 13) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/locutil/locstr.inl 67 (seta7D5 2021-10-14 12:14:37 -0300 67) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/locutil/locstr.inl 145 (seta7D5 2021-10-14 12:14:37 -0300 145) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/mit/mitutil/locvar.inl 200 (seta7D5 2021-10-14 12:14:37 -0300 200) //  TODO - comment this function
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/mit/mitutil/ltdebug.h 101 (seta7D5 2021-10-14 12:14:37 -0300 101) // TODO - find a better place for this
+^b2db264153 NT/admin/activec/locparser/locstudiosdk/inc/mit/inc/mitctrl.h 16 (seta7D5 2021-10-14 12:14:37 -0300 16) //TODO get this from some other place
+^b2db264153 NT/admin/activec/locparser/dllentry.cpp 10 (seta7D5 2021-10-14 12:14:37 -0300 10) //  This file needs minor changes, as marked by TODO comments. However, the
+^b2db264153 NT/admin/activec/locparser/dllentry.cpp 46 (seta7D5 2021-10-14 12:14:37 -0300 46) 		LTTRACE("DLLNAME.DLL Initializing!\n");	// TODO: Change name.
+^b2db264153 NT/admin/activec/locparser/dllentry.cpp 62 (seta7D5 2021-10-14 12:14:37 -0300 62) 		LTTRACE("DLLNAME.DLL Terminating!\n");	// TODO: Change name
+^b2db264153 NT/admin/activec/locparser/dllentry.cpp 80 (seta7D5 2021-10-14 12:14:37 -0300 80) // TODO: Use GUIDGEN.EXE to replace this class ID with a unique one.
+^b2db264153 NT/admin/activec/locparser/impfile.h 110 (seta7D5 2021-10-14 12:14:37 -0300 110) 		// TODO: Add more error types here if you need them.
+^b2db264153 NT/admin/activec/locparser/impfile.h 142 (seta7D5 2021-10-14 12:14:37 -0300 142) 	// Handy utility functions. TODO: Except for ReportException(), they should
+^b2db264153 NT/admin/activec/locparser/impfile.cpp 30 (seta7D5 2021-10-14 12:14:37 -0300 30) // TODO: Format constants go here.
+^b2db264153 NT/admin/activec/locparser/impfile.cpp 73 (seta7D5 2021-10-14 12:14:37 -0300 73) 	// TODO: initialize implementation member variables here.
+^b2db264153 NT/admin/activec/locparser/impfile.cpp 97 (seta7D5 2021-10-14 12:14:37 -0300 97) 	//  TODO: perform any implementation cleanup here.
+^b2db264153 NT/admin/activec/locparser/impfile.cpp 330 (seta7D5 2021-10-14 12:14:37 -0300 330) 	// TODO: If your files have associated files, put them in lstFiles here.
+^b2db264153 NT/admin/activec/locparser/impfile.cpp 522 (seta7D5 2021-10-14 12:14:37 -0300 522) //  TODO:
+^b2db264153 NT/admin/activec/locparser/impfile.cpp 721 (seta7D5 2021-10-14 12:14:37 -0300 721) 	// TODO: add cases for all ft* constants in impfile.h here.
+^b2db264153 NT/admin/activec/locparser/impfile.cpp 735 (seta7D5 2021-10-14 12:14:37 -0300 735) 	// TODO: check any checkable implementation member variables here.
+^b2db264153 NT/admin/activec/inc/xmlbase.h 206 (seta7D5 2021-10-14 12:14:37 -0300 206)     SC ScSaveToDocument( CXMLDocument& xmlDocument );
+^b2db264153 NT/admin/activec/inc/axhostwindow2.h 260 (seta7D5 2021-10-14 12:14:37 -0300 260)                     //TODO: The usermode and binary persistence needs to act here
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapr/mssnapr/main.cpp 218 (seta7D5 2021-10-14 12:14:37 -0300 218) // TODO: 
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapr/mssnapr/main.cpp 272 (seta7D5 2021-10-14 12:14:37 -0300 272)     // TODO: register any additional data here that you might wish to.
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapr/mssnapr/main.cpp 293 (seta7D5 2021-10-14 12:14:37 -0300 293)     // TODO: any additional registry cleanup that you might wish to do.
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapr/mssnapr/main.cpp 321 (seta7D5 2021-10-14 12:14:37 -0300 321)     // TODO: decide whether or not your server is licensed in this function.
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapr/mssnapr/ppgwrap.cpp 1291 (seta7D5 2021-10-14 12:14:37 -0300 1291)                 // TODO: does this work on RTL locales such as Hebrew and Arabic?
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapr/mssnapr/ppgwrap.cpp 1340 (seta7D5 2021-10-14 12:14:37 -0300 1340)                 // TODO: does this work on RTL locales such as Hebrew and Arabic?
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/makecbc.inc 196 (seta7D5 2021-10-14 12:14:37 -0300 196) # TODO: you should come up with some mechanism to generate this file
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/wbclsser.h 218 (seta7D5 2021-10-14 12:14:37 -0300 218) 		// TODO: need error codes for version incompatibility, handle backlevel formats etc.
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/wbclsser.h 531 (seta7D5 2021-10-14 12:14:37 -0300 531) 		// TODO: Mopve this into state funcs..
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/wbclsser.h 791 (seta7D5 2021-10-14 12:14:37 -0300 791)   // TODO: need error codes for version incompatibility, handle backlevel formats etc.
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/wbclsser.h 848 (seta7D5 2021-10-14 12:14:37 -0300 848)   // TODO: need error codes for version incompatibility, handle backlevel formats etc.
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/makectl.inc 270 (seta7D5 2021-10-14 12:14:37 -0300 270) # TODO: you should come up with some mechanism to generate this file
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/cdf.h 30 (seta7D5 2021-10-14 12:14:37 -0300 30)    char    				szClass[MAX_NODE_CLASS];   // TODO: Can we limit names and classes as such?
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/wcutil.h 592 (seta7D5 2021-10-14 12:14:37 -0300 592) // TODO: Do we want this this way?
+^b2db264153 NT/admin/activec/designer/vb98ctls/include/makeauto.inc 202 (seta7D5 2021-10-14 12:14:37 -0300 202) # TODO: you should come up with some mechanism to generate this file
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/desmain.cpp 313 (seta7D5 2021-10-14 12:14:37 -0300 313)     // TODO: if you want to support any additional interfaces, then you should
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/desmain.cpp 582 (seta7D5 2021-10-14 12:14:37 -0300 582) //    TODO: Make sure we don't have to do anything here
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/dll.cpp 76 (seta7D5 2021-10-14 12:14:37 -0300 76) // TODO: 
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/dll.cpp 94 (seta7D5 2021-10-14 12:14:37 -0300 94) // TODO: Cleanup this mess
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/dll.cpp 198 (seta7D5 2021-10-14 12:14:37 -0300 198)     // TODO: uninitialization here.  control window class will be unregistered
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/dll.cpp 228 (seta7D5 2021-10-14 12:14:37 -0300 228)     // TODO: decide whether or not your server is licensed in this function.
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/dll.cpp 341 (seta7D5 2021-10-14 12:14:37 -0300 341)     // TODO: register any additional data here that you might wish to.
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/dll.cpp 362 (seta7D5 2021-10-14 12:14:37 -0300 362)     // TODO: any additional registry cleanup that you might wish to do.
+^b2db264153 NT/admin/activec/designer/vb98ctls/mssnapd/mssnapd/dll.cpp 381 (seta7D5 2021-10-14 12:14:37 -0300 381) // TODO: if you are going to use the CRTs, then remove this line.
+^b2db264153 NT/admin/cys/lib/state.cpp 186 (seta7D5 2021-10-14 12:14:37 -0300 186) State::IsJoinedToDomain() const
+^b2db264153 NT/admin/cys/lib/state.cpp 188 (seta7D5 2021-10-14 12:14:37 -0300 188)    LOG_FUNCTION(State::IsJoinedToDomain);
+^b2db264153 NT/admin/cys/lib/state.cpp 190 (seta7D5 2021-10-14 12:14:37 -0300 190)    bool result = localComputer.IsJoinedToDomain();
+^b2db264153 NT/admin/cys/mys/res/mysstatic.xml 139 (seta7D5 2021-10-14 12:14:37 -0300 139) 			<!-- TODO -->
+^b2db264153 NT/admin/cys/win32/beforebeginpage.cpp 211 (seta7D5 2021-10-14 12:14:37 -0300 211)       if (state.IsJoinedToDomain())
+^b2db264153 NT/admin/cys/win32/pop3page.cpp 49 (seta7D5 2021-10-14 12:14:37 -0300 49)    bool isJoinedToDomain = State::GetInstance().IsJoinedToDomain();
+^b2db264153 NT/admin/cys/win32/pop3page.cpp 49 (seta7D5 2021-10-14 12:14:37 -0300 49)    bool isJoinedToDomain = State::GetInstance().IsJoinedToDomain();
+^b2db264153 NT/admin/cys/win32/pop3page.cpp 76 (seta7D5 2021-10-14 12:14:37 -0300 76)        isJoinedToDomain)
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/au_accnt/accntcmt.cpp 467 (seta7D5 2021-10-14 12:14:37 -0300 467)     if ( FAILED(JoinToDomainUsers()) )
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/au_accnt/accntcmt.cpp 679 (seta7D5 2021-10-14 12:14:37 -0300 679) HRESULT CUserInfo::JoinToDomainUsers()
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/au_accnt/accntcmt.h 31 (seta7D5 2021-10-14 12:14:37 -0300 31)         HRESULT JoinToDomainUsers();
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/wizchain/chainwiz.cpp 1023 (seta7D5 2021-10-14 12:14:37 -0300 1023)         // TODO: do I need these?  may need to pass in more params...
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/wizchain/chainwiz.cpp 1090 (seta7D5 2021-10-14 12:14:37 -0300 1090)             // TODO: do I need to add to the list of APSs ???
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/wizchain/pppbag.cpp 122 (seta7D5 2021-10-14 12:14:37 -0300 122)             // TODO:  add code so that additive properties work correctly
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/wizchain/pppbag.cpp 511 (seta7D5 2021-10-14 12:14:37 -0300 511)     // TODO:  figure out how to use map.count method 
+^b2db264153 NT/admin/cys/servmgmt/auw/dll/wizchain/wzscreng.cpp 43 (seta7D5 2021-10-14 12:14:37 -0300 43)     // TODO:  should I add defaults when LoadImage calls above fail?
+^b2db264153 NT/admin/cys/inc/state.h 93 (seta7D5 2021-10-14 12:14:37 -0300 93)       IsJoinedToDomain() const;
+^b2db264153 NT/admin/admt/updatemot/domainlistdlg.cpp 58 (seta7D5 2021-10-14 12:14:37 -0300 58) 	// TODO: Add extra cleanup here
+^b2db264153 NT/admin/admt/updatemot/domainlistdlg.cpp 69 (seta7D5 2021-10-14 12:14:37 -0300 69) 	// TODO: Add extra validation here
+^b2db264153 NT/admin/admt/updatemot/progressdlg.cpp 55 (seta7D5 2021-10-14 12:14:37 -0300 55) 	// TODO: Add extra initialization here
+^b2db264153 NT/admin/admt/updatemot/progressdlg.cpp 68 (seta7D5 2021-10-14 12:14:37 -0300 68) 	// TODO: Add extra cleanup here
+^b2db264153 NT/admin/admt/updatemot/summarydlg.cpp 48 (seta7D5 2021-10-14 12:14:37 -0300 48) 	// TODO: Add extra initialization here
+^b2db264153 NT/admin/admt/updatemot/introdlg.cpp 47 (seta7D5 2021-10-14 12:14:37 -0300 47) 	// TODO: Add extra cleanup here
+^b2db264153 NT/admin/admt/updatemot/introdlg.cpp 57 (seta7D5 2021-10-14 12:14:37 -0300 57) 	// TODO: Add extra validation here
+^b2db264153 NT/admin/admt/updatemot/introdlg.cpp 65 (seta7D5 2021-10-14 12:14:37 -0300 65) 	// TODO: Add extra initialization here
+^b2db264153 NT/admin/admt/dctagent/dctagent.cpp 1189 (seta7D5 2021-10-14 12:14:37 -0300 1189)       // TODO:  log an error message!
+^b2db264153 NT/admin/admt/dctagent/dctagent.cpp 1625 (seta7D5 2021-10-14 12:14:37 -0300 1625)       hr = pChange->raw_ChangeToDomainWithSid(
+^b2db264153 NT/admin/admt/dommigsi/dommigr.h 32 (seta7D5 2021-10-14 12:14:37 -0300 32) 		// TODO : Add code to handle notifications that set lpDataObject == NULL.
+^b2db264153 NT/admin/admt/dommigsi/domsel.cpp 63 (seta7D5 2021-10-14 12:14:37 -0300 63) 	// TODO: Add extra initialization here
+^b2db264153 NT/admin/admt/dommigsi/prgrnode.cpp 33 (seta7D5 2021-10-14 12:14:37 -0300 33)    // TODO:  load the domain hierarchy for the current forest
+^b2db264153 NT/admin/admt/dommigsi/prgrnode.cpp 125 (seta7D5 2021-10-14 12:14:37 -0300 125)    // TODO:  if we haven't already, enumerate our contents
+^b2db264153 NT/admin/admt/dommigsi/netnode.h 290 (seta7D5 2021-10-14 12:14:37 -0300 290)       // TODO : Return the text for other columns
+^b2db264153 NT/admin/admt/common/commonlib/samutils.cpp 160 (seta7D5 2021-10-14 12:14:37 -0300 160)             dwError = RtlNtStatusToDosError(ntsStatus);
+^b2db264153 NT/admin/admt/common/commonlib/samutils.cpp 212 (seta7D5 2021-10-14 12:14:37 -0300 212)             dwError = RtlNtStatusToDosError(ntsStatus);
+^b2db264153 NT/admin/admt/common/commonlib/samutils.cpp 219 (seta7D5 2021-10-14 12:14:37 -0300 219)         dwError = RtlNtStatusToDosError(ntsStatus);
+^b2db264153 NT/admin/admt/common/commonlib/samutils.cpp 275 (seta7D5 2021-10-14 12:14:37 -0300 275)         dwError = RtlNtStatusToDosError(ntsStatus);
+^b2db264153 NT/admin/admt/common/commonlib/tevent.cpp 77 (seta7D5 2021-10-14 12:14:37 -0300 77)    // TODO:  setup event category
+^b2db264153 NT/admin/admt/common/commonlib/tevent.cpp 78 (seta7D5 2021-10-14 12:14:37 -0300 78)    // TODO:  log events in Unicode
+^b2db264153 NT/admin/admt/common/idl/workobj.idl 59 (seta7D5 2021-10-14 12:14:37 -0300 59) 		[id(1), helpstring("method ChangeToDomain")] HRESULT ChangeToDomain(BSTR ActiveComputerName, BSTR Domain, BSTR NewComputerName,[out] BSTR * errStatus);
+^b2db264153 NT/admin/admt/common/idl/workobj.idl 59 (seta7D5 2021-10-14 12:14:37 -0300 59) 		[id(1), helpstring("method ChangeToDomain")] HRESULT ChangeToDomain(BSTR ActiveComputerName, BSTR Domain, BSTR NewComputerName,[out] BSTR * errStatus);
+^b2db264153 NT/admin/admt/common/idl/workobj.idl 64 (seta7D5 2021-10-14 12:14:37 -0300 64) 		[id(5), helpstring("method ChangeToDomainWithSid")] HRESULT ChangeToDomainWithSid(BSTR ActiveComputerName, BSTR Domain, BSTR DomainSid, BSTR DomainController, BSTR NewComputerName, BSTR SrcPath, [out] BSTR * errStatus);
+^b2db264153 NT/admin/admt/common/idl/workobj.idl 64 (seta7D5 2021-10-14 12:14:37 -0300 64) 		[id(5), helpstring("method ChangeToDomainWithSid")] HRESULT ChangeToDomainWithSid(BSTR ActiveComputerName, BSTR Domain, BSTR DomainSid, BSTR DomainController, BSTR NewComputerName, BSTR SrcPath, [out] BSTR * errStatus);
+^b2db264153 NT/admin/admt/dbmgr/mgedb.cpp 973 (seta7D5 2021-10-14 12:14:37 -0300 973) 		  //TODO:: Add code to delete entries from any other tables if needed
+^b2db264153 NT/admin/admt/dbmgr/mgedb.cpp 1674 (seta7D5 2021-10-14 12:14:37 -0300 1674) 		  _com_issue_error(HRESULT_FROM_WIN32(GetLastError())); //TODO: stream i/o doesn't set last error
+^b2db264153 NT/admin/admt/dbmgr/mgedb.cpp 1926 (seta7D5 2021-10-14 12:14:37 -0300 1926) 				   //TODO :: The types need more work
+^b2db264153 NT/admin/admt/workobj/sectrans.cpp 1275 (seta7D5 2021-10-14 12:14:37 -0300 1275)    // TODO:  Add error message if rc != 0
+^b2db264153 NT/admin/admt/workobj/sectrans.cpp 2058 (seta7D5 2021-10-14 12:14:37 -0300 2058) 			// TODO: not currently supported
+^b2db264153 NT/admin/admt/workobj/sectrans.cpp 2078 (seta7D5 2021-10-14 12:14:37 -0300 2078) 			// TODO: not currently supported
+^b2db264153 NT/admin/admt/workobj/chdom.cpp 79 (seta7D5 2021-10-14 12:14:37 -0300 79)    CChangeDomain::ChangeToDomain(
+^b2db264153 NT/admin/admt/workobj/chdom.cpp 93 (seta7D5 2021-10-14 12:14:37 -0300 93)    CChangeDomain::ChangeToDomainWithSid(
+^b2db264153 NT/admin/admt/workobj/chdom.h 63 (seta7D5 2021-10-14 12:14:37 -0300 63) 	STDMETHOD(ChangeToDomain)(BSTR ActiveComputerName, BSTR Domain, BSTR TargetComputerName, /*[out]*/ BSTR * errStatus);
+^b2db264153 NT/admin/admt/workobj/chdom.h 64 (seta7D5 2021-10-14 12:14:37 -0300 64) 	STDMETHOD(ChangeToDomainWithSid)(BSTR ActiveComputerName, BSTR Domain,BSTR DomainSid, BSTR DomainController, BSTR TargetComputerName, BSTR SrcPath, /*[out]*/ BSTR * errStatus);
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 191 (seta7D5 2021-10-14 12:14:37 -0300 191)          // TODO:  if (m_pVarSet ) ...
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 195 (seta7D5 2021-10-14 12:14:37 -0300 195)          // TODO:  if (m_pVarSet ) ...
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 236 (seta7D5 2021-10-14 12:14:37 -0300 236)          // TODO: if ( m_pVarSet ) ...
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 240 (seta7D5 2021-10-14 12:14:37 -0300 240)          // TODO: if ( m_pVarSet ) ...
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 280 (seta7D5 2021-10-14 12:14:37 -0300 280)          //TODO:  if ( m_pVarSet ) m_pVarSet->put(
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 284 (seta7D5 2021-10-14 12:14:37 -0300 284)          //TODO:  if ( m_pVarSet ) m_pVarSet->put(
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 324 (seta7D5 2021-10-14 12:14:37 -0300 324)          // TODO:  if ( m_pVarSet ) ...
+^b2db264153 NT/admin/admt/workobj/sdstat.hpp 328 (seta7D5 2021-10-14 12:14:37 -0300 328)          // TODO:  if ( m_pVarSet ) ...
+^b2db264153 NT/admin/admt/adsprop/objprop.cpp 1137 (seta7D5 2021-10-14 12:14:37 -0300 1137)                         // TODO: The objectSid attribute is a system only attribute therefore this is redundant.
+^b2db264153 NT/admin/admt/adsprop/objprop.cpp 1142 (seta7D5 2021-10-14 12:14:37 -0300 1142)                         // TODO: The c, l, st and userAccountControl attributes were previously considered
+^b2db264153 NT/admin/admt/command/parameter.cpp 798 (seta7D5 2021-10-14 12:14:37 -0300 798) 			// TODO: not currently supported
+^b2db264153 NT/admin/admt/command/parameter.cpp 819 (seta7D5 2021-10-14 12:14:37 -0300 819) 			// TODO: not currently supported
+^b2db264153 NT/admin/admt/command/readme.txt 31 (seta7D5 2021-10-14 12:14:37 -0300 31) AppWizard uses "TODO:" to indicate parts of the source code you
+^b2db264153 NT/admin/admt/netobjen/enumtest/enumvar.h 17 (seta7D5 2021-10-14 12:14:37 -0300 17) // TODO :: We can add more attributes in order to get the appropriate information from the Object
+^b2db264153 NT/admin/admt/netobjen/enumtest/readme.txt 76 (seta7D5 2021-10-14 12:14:37 -0300 76) AppWizard uses "TODO:" to indicate parts of the source code you
+^b2db264153 NT/admin/admt/netobjen/enumtest/enumtest.cpp 30 (seta7D5 2021-10-14 12:14:37 -0300 30) 	// TODO: add construction code here,
+^b2db264153 NT/admin/admt/netobjen/enumtest/enumtest.cpp 63 (seta7D5 2021-10-14 12:14:37 -0300 63) 		// TODO: Place code here to handle when the dialog is
+^b2db264153 NT/admin/admt/netobjen/enumtest/enumtest.cpp 68 (seta7D5 2021-10-14 12:14:37 -0300 68) 		// TODO: Place code here to handle when the dialog is
+^b2db264153 NT/admin/admt/agtsvc/dctagsvc.cpp 109 (seta7D5 2021-10-14 12:14:37 -0300 109)    // TODO:  what should this do?
+^b2db264153 NT/admin/admt/agtsvc/dctagsvc.cpp 157 (seta7D5 2021-10-14 12:14:37 -0300 157)    // TODO:  change this to use GetVersionEx
+^b2db264153 NT/admin/admt/agtsvc/dctagsvc.cpp 304 (seta7D5 2021-10-14 12:14:37 -0300 304)       // TODO:  wait for the registration to complete
+^b2db264153 NT/admin/admt/wizards/readme.txt 63 (seta7D5 2021-10-14 12:14:37 -0300 63) AppWizard uses "TODO:" to indicate parts of the source code you
+^b2db264153 NT/admin/admt/wizards/wizards.cpp 83 (seta7D5 2021-10-14 12:14:37 -0300 83) 	// TODO: add construction code here,
+^b2db264153 NT/admin/admt/wizards/globals.h 181 (seta7D5 2021-10-14 12:14:37 -0300 181) // TODO:
+^b2db264153 NT/admin/admt/wizards/trstdlg.cpp 76 (seta7D5 2021-10-14 12:14:37 -0300 76) 	// TODO: Add your control notification handler code here
+^b2db264153 NT/admin/admt/wizards/trstdlg.cpp 88 (seta7D5 2021-10-14 12:14:37 -0300 88) 	// TODO: Add extra initialization here
+^b2db264153 NT/admin/admt/setup/pwdmsi/stdafx.cpp 7 (seta7D5 2021-10-14 12:14:37 -0300 7) // TODO: reference any additional headers you need in STDAFX.H
+^b2db264153 NT/admin/admt/setup/pwdmsi/stdafx.h 19 (seta7D5 2021-10-14 12:14:37 -0300 19) // TODO: reference additional headers your program requires here
+^b2db264153 NT/admin/admt/setup/pwdmsi/pwdmsi.h 18 (seta7D5 2021-10-14 12:14:37 -0300 18) 	// TODO: add your methods here.
+^b2db264153 NT/admin/admt/setup/admtmsi/admtmsi.cpp 64 (seta7D5 2021-10-14 12:14:37 -0300 64) 	// TODO: add construction code here,
+^b2db264153 NT/admin/admt/varset/vset.cpp 541 (seta7D5 2021-10-14 12:14:37 -0300 541)    // TODO:  Verify that all the arguments are the correct type!
+^b2db264153 NT/admin/admt/varset/vset.cpp 1114 (seta7D5 2021-10-14 12:14:37 -0300 1114)    // TODO:  need to speed this up by using getItems
+^b2db264153 NT/admin/admt/migdrvr/maindlg.cpp 217 (seta7D5 2021-10-14 12:14:37 -0300 217) 	// TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/admt/migdrvr/detdlg.cpp 1003 (seta7D5 2021-10-14 12:14:37 -0300 1003)             // TODO:error message
+^b2db264153 NT/admin/admt/migdrvr/detdlg.cpp 1100 (seta7D5 2021-10-14 12:14:37 -0300 1100)     // TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/admt/migdrvr/mondlg.cpp 727 (seta7D5 2021-10-14 12:14:37 -0300 727) 	// TODO: Add your control notification handler code here
+^b2db264153 NT/admin/admt/migdrvr/mondlg.cpp 735 (seta7D5 2021-10-14 12:14:37 -0300 735) 	// TODO: Add your control notification handler code here
+^b2db264153 NT/admin/snapin/domain/domobj.cpp 558 (seta7D5 2021-10-14 12:14:37 -0300 558)       // TODO: error handling, change icon
+^b2db264153 NT/admin/snapin/domain/cdomain.cpp 392 (seta7D5 2021-10-14 12:14:37 -0300 392)       // TODO: error handling, change icon
+^b2db264153 NT/admin/snapin/domain/cdomain.cpp 573 (seta7D5 2021-10-14 12:14:37 -0300 573)       // TODO: error handling, change icon
+^b2db264153 NT/admin/snapin/rolemgr/sidcache.cpp 1026 (seta7D5 2021-10-14 12:14:37 -0300 1026) 					//	TODO
+^b2db264153 NT/admin/snapin/rolemgr/propbase.cpp 1276 (seta7D5 2021-10-14 12:14:37 -0300 1276)     //ToDO Display Error in case of failure
+^b2db264153 NT/admin/snapin/adsiedit/adsiedit.cpp 579 (seta7D5 2021-10-14 12:14:37 -0300 579)   // TODO
+^b2db264153 NT/admin/snapin/adsiedit/adsiedit.cpp 708 (seta7D5 2021-10-14 12:14:37 -0300 708)   HELP_MAP_ENTRY(IDD_DOMAIN_ADDNEWHOST) // TODO
+^b2db264153 NT/admin/snapin/adsiedit/adsiedit.cpp 709 (seta7D5 2021-10-14 12:14:37 -0300 709)   HELP_MAP_ENTRY(IDD_DOMAIN_ADDNEWDOMAIN)// TODO
+^b2db264153 NT/admin/snapin/adsiedit/attredit.cpp 1207 (seta7D5 2021-10-14 12:14:37 -0300 1207) // TODO : This is extremely ugly, redo it
+^b2db264153 NT/admin/snapin/adsiedit/common.h 20 (seta7D5 2021-10-14 12:14:37 -0300 20) // TODO: use correct letter case for a variable (vs. MACRO style)
+^b2db264153 NT/admin/snapin/certmgr/certmgr.cpp 392 (seta7D5 2021-10-14 12:14:37 -0300 392)                     // TODO: What to do with these?
+^b2db264153 NT/admin/snapin/certmgr/componentdatamenus.cpp 63 (seta7D5 2021-10-14 12:14:37 -0300 63) 			// TODO: Verify
+^b2db264153 NT/admin/snapin/certmgr/finddlg.cpp 1621 (seta7D5 2021-10-14 12:14:37 -0300 1621)         // TODO: Ensure that this is NULL if the local machine
+^b2db264153 NT/admin/snapin/certmgr/compdata.cpp 2756 (seta7D5 2021-10-14 12:14:37 -0300 2756)                 // TODO: Enumerate user levels
+^b2db264153 NT/admin/snapin/certmgr/compdata.cpp 2760 (seta7D5 2021-10-14 12:14:37 -0300 2760)                 // TODO: Enumerate computer entries
+^b2db264153 NT/admin/snapin/certmgr/compdata.cpp 2764 (seta7D5 2021-10-14 12:14:37 -0300 2764)                 // TODO: Enumerate user entries
+^b2db264153 NT/admin/snapin/certmgr/compdata.cpp 3870 (seta7D5 2021-10-14 12:14:37 -0300 3870)         // TODO: Ensure that this is NULL if the local machine
+^b2db264153 NT/admin/snapin/certmgr/saferentrycertificatepropertypage.cpp 503 (seta7D5 2021-10-14 12:14:37 -0300 503)                     // TODO:  Do we need to duplicate context here?
+^b2db264153 NT/admin/snapin/localsec/src/fpnw.cpp 203 (seta7D5 2021-10-14 12:14:37 -0300 203)             RtlNtStatusToDosError(
+^b2db264153 NT/admin/snapin/localsec/src/fpnw.cpp 213 (seta7D5 2021-10-14 12:14:37 -0300 213)             RtlNtStatusToDosError(
+^b2db264153 NT/admin/snapin/localsec/src/fpnw.cpp 230 (seta7D5 2021-10-14 12:14:37 -0300 230)             RtlNtStatusToDosError(
+^b2db264153 NT/admin/snapin/eventlog/src/compdata.cxx 1920 (seta7D5 2021-10-14 12:14:37 -0300 1920)         // comes in as a CCT_SCOPE context. (TODO: this is a console bug,
+^b2db264153 NT/admin/snapin/eventlog/src/eventmsg.cxx 1857 (seta7D5 2021-10-14 12:14:37 -0300 1857)         // TODO: it would be better if doing a Refresh command in the UI
+^b2db264153 NT/admin/snapin/eventlog/src/loginfo.hxx 566 (seta7D5 2021-10-14 12:14:37 -0300 566)     // TODO: this is too large and thus not optimal in memory usage.
+^b2db264153 NT/admin/snapin/eventlog/src/log.cxx 221 (seta7D5 2021-10-14 12:14:37 -0300 221) //  TODO: make pelr and out ptr and return HRESULT so event log cleared
+^b2db264153 NT/admin/snapin/eventlog/src/dlg.cxx 187 (seta7D5 2021-10-14 12:14:37 -0300 187)         // TODO: failures should be reported in the _OnInit implementations.
+^b2db264153 NT/admin/snapin/wsecmgr/snapmgr.cpp 5012 (seta7D5 2021-10-14 12:14:37 -0300 5012)                      // TODO: check and see if npos should be compared to -1 here
+^b2db264153 NT/admin/snapin/wsecmgr/snapmgr.cpp 6208 (seta7D5 2021-10-14 12:14:37 -0300 6208)                   DWORD win32 = SceStatusToDosError(rc);
+^b2db264153 NT/admin/snapin/wsecmgr/util.h 82 (seta7D5 2021-10-14 12:14:37 -0300 82) DWORD SceStatusToDosError(SCESTATUS SceStatus);
+^b2db264153 NT/admin/snapin/wsecmgr/util.cpp 616 (seta7D5 2021-10-14 12:14:37 -0300 616)    // TODO:
+^b2db264153 NT/admin/snapin/wsecmgr/util.cpp 729 (seta7D5 2021-10-14 12:14:37 -0300 729)       DWORD win32 = SceStatusToDosError(rc);
+^b2db264153 NT/admin/snapin/wsecmgr/util.cpp 870 (seta7D5 2021-10-14 12:14:37 -0300 870) DWORD SceStatusToDosError(SCESTATUS SceStatus)
+^b2db264153 NT/admin/snapin/wsecmgr/wmihooks.cpp 205 (seta7D5 2021-10-14 12:14:37 -0300 205)     //TODO
+^b2db264153 NT/admin/snapin/wsecmgr/command.cpp 1060 (seta7D5 2021-10-14 12:14:37 -0300 1060)          DWORD dwError = SceStatusToDosError( sceStatus );
+^b2db264153 NT/admin/snapin/wsecmgr/uithread.cpp 83 (seta7D5 2021-10-14 12:14:37 -0300 83)    // TODO:  perform and per-thread initialization here
+^b2db264153 NT/admin/snapin/wsecmgr/uithread.cpp 89 (seta7D5 2021-10-14 12:14:37 -0300 89)    // TODO:  perform any per-thread cleanup here
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/utils.c 501 (seta7D5 2021-10-14 12:14:37 -0300 501)                         // Todo:  Report event for this case.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 62 (seta7D5 2021-10-14 12:14:37 -0300 62) // todo:  Move SECONDS_IN_DAY definition
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 275 (seta7D5 2021-10-14 12:14:37 -0300 275)                     } // else todo: report error
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 812 (seta7D5 2021-10-14 12:14:37 -0300 812)                     // Todo:  Report event for this case.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 937 (seta7D5 2021-10-14 12:14:37 -0300 937)     Todo:  Report event on failure
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 1028 (seta7D5 2021-10-14 12:14:37 -0300 1028)     // Todo:  Presumes OutFileBuffer is large enough (i.e. >= MAX_PATH+1)
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 1104 (seta7D5 2021-10-14 12:14:37 -0300 1104)                     // todo:  Make buf length restriction explicit to calling code
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 1107 (seta7D5 2021-10-14 12:14:37 -0300 1107)                         // Todo: Truncation-specific error code.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 1344 (seta7D5 2021-10-14 12:14:37 -0300 1344)     // Todo:  File attributes only for counter and trace logs       
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 2475 (seta7D5 2021-10-14 12:14:37 -0300 2475)             // Todo:  Info event on number wrap - Server Beta 3.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 2485 (seta7D5 2021-10-14 12:14:37 -0300 2485)             // Todo: log event on error.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 2586 (seta7D5 2021-10-14 12:14:37 -0300 2586)     } // Todo: else report error, return error
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 2759 (seta7D5 2021-10-14 12:14:37 -0300 2759)         // Todo:  Don't allow repeat or restart with Manual mode?
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 2921 (seta7D5 2021-10-14 12:14:37 -0300 2921)     // Todo: local and global buffer sizes are fixed.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 4409 (seta7D5 2021-10-14 12:14:37 -0300 4409)                             // TodoSec:  Fail on truncation?
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 4423 (seta7D5 2021-10-14 12:14:37 -0300 4423)                                         // TodoSec:  Fail on truncation?
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.c 4973 (seta7D5 2021-10-14 12:14:37 -0300 4973)                                 // Todo: handle error
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 953 (seta7D5 2021-10-14 12:14:37 -0300 953)         } // ToDo: else report StringCchxxx failure.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 2224 (seta7D5 2021-10-14 12:14:37 -0300 2224)     // Todo:  Enforce log file name length
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 2700 (seta7D5 2021-10-14 12:14:37 -0300 2700)                     // Todo cnf:  Internal program error, report error and exit.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 2732 (seta7D5 2021-10-14 12:14:37 -0300 2732)                     // Todo:  Info event on number wrap.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 2779 (seta7D5 2021-10-14 12:14:37 -0300 2779)                             // todo cnf:  The following should be logically impossible,
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 2994 (seta7D5 2021-10-14 12:14:37 -0300 2994)                         // Todo cnf:  report event on error;
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 2999 (seta7D5 2021-10-14 12:14:37 -0300 2999)                 // cnf Todo:  Handle break from sample loop. ?
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 3344 (seta7D5 2021-10-14 12:14:37 -0300 3344)                             // todo cnf:  The following should be logically impossible,
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/logthred.c 3382 (seta7D5 2021-10-14 12:14:37 -0300 3382)                             // Todo cnf report event on bad status.
+^b2db264153 NT/admin/snapin/smonlog/smlogsvc/smlogsvc.h 109 (seta7D5 2021-10-14 12:14:37 -0300 109) 			// Todo:  Still true?
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/schdprop.cpp 674 (seta7D5 2021-10-14 12:14:37 -0300 674)             // Todo: Set the query PASSWORD_DIRTY flag only when m_bExecEofCommand is TRUE
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/schdprop.cpp 912 (seta7D5 2021-10-14 12:14:37 -0300 912)         // Todo: Set the query PASSWORD_DIRTY flag only when m_bExecEofCommand is TRUE
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/ctrsprop.cpp 1034 (seta7D5 2021-10-14 12:14:37 -0300 1034)     // Todo:  Handle failure status
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/ctrsprop.cpp 1035 (seta7D5 2021-10-14 12:14:37 -0300 1035)     // Todo:  Check pointers
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smtprov.cpp 437 (seta7D5 2021-10-14 12:14:37 -0300 437)                                 GUID    guidTemp;    // Todo:  Init
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smtprov.cpp 467 (seta7D5 2021-10-14 12:14:37 -0300 467)                                 } // Todo:  Error message on invalid Guid string.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/filelogs.cpp 212 (seta7D5 2021-10-14 12:14:37 -0300 212)     // Todo; Error message
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smtraceq.cpp 206 (seta7D5 2021-10-14 12:14:37 -0300 206)             // Todo: handle string alloc error
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smtraceq.cpp 997 (seta7D5 2021-10-14 12:14:37 -0300 997)     // Todo: Handle error
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 596 (seta7D5 2021-10-14 12:14:37 -0300 596)     // Todo:  Handle return status
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 892 (seta7D5 2021-10-14 12:14:37 -0300 892)                         // Todo:  Build error message.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 965 (seta7D5 2021-10-14 12:14:37 -0300 965)     //  Todo:  Display error message listing unloaded counters.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 1106 (seta7D5 2021-10-14 12:14:37 -0300 1106)     //  Todo:  Error message for counters that fail.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 1153 (seta7D5 2021-10-14 12:14:37 -0300 1153)                         // Todo:  Build error message.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 1187 (seta7D5 2021-10-14 12:14:37 -0300 1187)     //  Todo:  Display error message
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 1188 (seta7D5 2021-10-14 12:14:37 -0300 1188)     //  Todo:  Caller handle error.  Return count of saved counters.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 1340 (seta7D5 2021-10-14 12:14:37 -0300 1340)                 //  Todo:  On failure, add path to error list and continue with next counter.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smalrtq.cpp 1360 (seta7D5 2021-10-14 12:14:37 -0300 1360)         // Todo:  Display error for unadded counters.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/compdata.cpp 2329 (seta7D5 2021-10-14 12:14:37 -0300 2329)                         // kathsetodo:  Handle larger files?
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/compdata.cpp 2422 (seta7D5 2021-10-14 12:14:37 -0300 2422)                                                             // TODO:  Handle error
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/compdata.cpp 2453 (seta7D5 2021-10-14 12:14:37 -0300 2453)                             // kathsetodo:  error message re: file too large.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogqry.cpp 2747 (seta7D5 2021-10-14 12:14:37 -0300 2747)     // Todo:  dwStatus or hr?
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogqry.cpp 3233 (seta7D5 2021-10-14 12:14:37 -0300 3233)     // Todo:  Return and use status
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogqry.cpp 3260 (seta7D5 2021-10-14 12:14:37 -0300 3260)     // Todo:  Return and use status
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogqry.cpp 3284 (seta7D5 2021-10-14 12:14:37 -0300 3284)     // Todo:  Return and use status
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogqry.cpp 3308 (seta7D5 2021-10-14 12:14:37 -0300 3308)     // Todo:  Return and use status
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogqry.cpp 3406 (seta7D5 2021-10-14 12:14:37 -0300 3406)     // Todo:  Does defalt value setting overwrite the Whistler Beta 1 setting?
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/alrtactp.cpp 632 (seta7D5 2021-10-14 12:14:37 -0300 632)             // TODO:  Use static string for message in order to display in low memory situations.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/fileprop.cpp 910 (seta7D5 2021-10-14 12:14:37 -0300 910)         // Todo:  Handle bad status
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogs.cpp 636 (seta7D5 2021-10-14 12:14:37 -0300 636)                         // Todo:  Error message
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogs.cpp 1184 (seta7D5 2021-10-14 12:14:37 -0300 1184)                 // Todo:  Message on error.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogs.cpp 1497 (seta7D5 2021-10-14 12:14:37 -0300 1497)                             } // Todo:  else report message?
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogs.cpp 1499 (seta7D5 2021-10-14 12:14:37 -0300 1499)                     } // Todo:  else report message?
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smlogs.cpp 1500 (seta7D5 2021-10-14 12:14:37 -0300 1500)                 } // Todo:  else report message?
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smctrqry.cpp 539 (seta7D5 2021-10-14 12:14:37 -0300 539)                         // Todo:  Build error message.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smctrqry.cpp 559 (seta7D5 2021-10-14 12:14:37 -0300 559)     //  Todo:  Display error message listing unloaded counters.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smctrqry.cpp 616 (seta7D5 2021-10-14 12:14:37 -0300 616)     //  Todo:  Error message for counters that fail.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smctrqry.cpp 651 (seta7D5 2021-10-14 12:14:37 -0300 651)                     // Todo:  Build error message.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smctrqry.cpp 676 (seta7D5 2021-10-14 12:14:37 -0300 676)     //  Todo:  Display error message
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smctrqry.cpp 677 (seta7D5 2021-10-14 12:14:37 -0300 677)     //  Todo:  Caller handle error.  Return count of saved counters.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/smctrqry.cpp 811 (seta7D5 2021-10-14 12:14:37 -0300 811)         // Todo:  Display error for unadded counters.
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/alrtgenp.cpp 102 (seta7D5 2021-10-14 12:14:37 -0300 102)     // Todo:  validate pointers
+^b2db264153 NT/admin/snapin/smonlog/smlogcfg/alrtgenp.cpp 1258 (seta7D5 2021-10-14 12:14:37 -0300 1258)     // Todo:  Error message on failure
+^b2db264153 NT/admin/snapin/filemgmt/sfmsess.cpp 68 (seta7D5 2021-10-14 12:14:37 -0300 68) 	// TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/snapin/filemgmt/sfmsess.cpp 75 (seta7D5 2021-10-14 12:14:37 -0300 75) 	// TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/snapin/filemgmt/sfmsess.cpp 82 (seta7D5 2021-10-14 12:14:37 -0300 82) 	// TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/snapin/filemgmt/sfmsess.cpp 89 (seta7D5 2021-10-14 12:14:37 -0300 89) 	// TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/snapin/filemgmt/sfmcfg.cpp 205 (seta7D5 2021-10-14 12:14:37 -0300 205)   // TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/snapin/filemgmt/sfmcfg.cpp 212 (seta7D5 2021-10-14 12:14:37 -0300 212)   // TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/snapin/filemgmt/sfmcfg.cpp 219 (seta7D5 2021-10-14 12:14:37 -0300 219)   // TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/snapin/certentp/compdata.cpp 523 (seta7D5 2021-10-14 12:14:37 -0300 523)             // TODO: Verify
+^b2db264153 NT/admin/snapin/mtfrmwk/dataobj_.cpp 357 (seta7D5 2021-10-14 12:14:37 -0300 357) 	// TODO
+^b2db264153 NT/admin/snapin/dsadmin/dssnap.cpp 3254 (seta7D5 2021-10-14 12:14:37 -0300 3254)     LPCWSTR lpszTODO = L"";
+^b2db264153 NT/admin/snapin/dsadmin/dssnap.cpp 3258 (seta7D5 2021-10-14 12:14:37 -0300 3258)     CFsmoPropertySheet sheet(GetBasePathsInfo(), hWnd, spIDisplayHelp, lpszTODO);
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 921 (seta7D5 2021-10-14 12:14:37 -0300 921) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1079 (seta7D5 2021-10-14 12:14:37 -0300 1079) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1183 (seta7D5 2021-10-14 12:14:37 -0300 1183) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1318 (seta7D5 2021-10-14 12:14:37 -0300 1318) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1387 (seta7D5 2021-10-14 12:14:37 -0300 1387) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1453 (seta7D5 2021-10-14 12:14:37 -0300 1453) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1512 (seta7D5 2021-10-14 12:14:37 -0300 1512) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1767 (seta7D5 2021-10-14 12:14:37 -0300 1767) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1845 (seta7D5 2021-10-14 12:14:37 -0300 1845) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1921 (seta7D5 2021-10-14 12:14:37 -0300 1921) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 1979 (seta7D5 2021-10-14 12:14:37 -0300 1979) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 2069 (seta7D5 2021-10-14 12:14:37 -0300 2069) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 2225 (seta7D5 2021-10-14 12:14:37 -0300 2225) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/record.cpp 2361 (seta7D5 2021-10-14 12:14:37 -0300 2361) 	ASSERT(FALSE); // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/zone.cpp 210 (seta7D5 2021-10-14 12:14:37 -0300 210)         // REVIEW_JEFFJON : todo!!!
+^b2db264153 NT/admin/snapin/dnsmgr/zone.cpp 219 (seta7D5 2021-10-14 12:14:37 -0300 219)         // REVIEW_JEFFJON : todo!!!
+^b2db264153 NT/admin/snapin/dnsmgr/zone.cpp 228 (seta7D5 2021-10-14 12:14:37 -0300 228)         // REVIEW_JEFFJON : todo!!!
+^b2db264153 NT/admin/snapin/dnsmgr/dnssnap.rc 1061 (seta7D5 2021-10-14 12:14:37 -0300 1061)     LTEXT           "<TODO, summary info>",IDC_SUMMARY_STATIC,115,73,194,50,
+^b2db264153 NT/admin/snapin/dnsmgr/nspage.cpp 1110 (seta7D5 2021-10-14 12:14:37 -0300 1110) 	// TODO: first check if we can recycle some old stuff in the list
+^b2db264153 NT/admin/snapin/dnsmgr/nspage.cpp 1555 (seta7D5 2021-10-14 12:14:37 -0300 1555) 	// TODO: first check if we can recycle some old stuff in the list
+^b2db264153 NT/admin/snapin/dnsmgr/dnssnap.cpp 1066 (seta7D5 2021-10-14 12:14:37 -0300 1066)   HELP_MAP_ENTRY(IDD_DOMAIN_ADDNEWHOST) // TODO
+^b2db264153 NT/admin/snapin/dnsmgr/dnssnap.cpp 1067 (seta7D5 2021-10-14 12:14:37 -0300 1067)   HELP_MAP_ENTRY(IDD_DOMAIN_ADDNEWDOMAIN)// TODO
+^b2db264153 NT/admin/snapin/dnsmgr/zonewiz.cpp 2227 (seta7D5 2021-10-14 12:14:37 -0300 2227) 	// TODO
+^b2db264153 NT/admin/snapin/dnsmgr/zonewiz.cpp 2549 (seta7D5 2021-10-14 12:14:37 -0300 2549) 	// TODO
+^b2db264153 NT/admin/select/src/srvinfo.cxx 368 (seta7D5 2021-10-14 12:14:37 -0300 368)                          HRESULT_FROM_WIN32(RtlNtStatusToDosError(ulADsLastError)):
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/servdeps/deppage.cpp 156 (seta7D5 2021-10-14 12:14:37 -0300 156) 	//TODO: Decide opn what to do for this
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/servdeps/deppage.cpp 554 (seta7D5 2021-10-14 12:14:37 -0300 554) 	//TODO: Check this out
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/servdeps/sdsnapin.cpp 43 (seta7D5 2021-10-14 12:14:37 -0300 43) 	// TODO : Add code here to add additional pages
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/netutility.h 17 (seta7D5 2021-10-14 12:14:37 -0300 17) //TODO
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/generalpage.cpp 327 (seta7D5 2021-10-14 12:14:37 -0300 327) 	//TODO: get this property back.
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/generalpage.cpp 566 (seta7D5 2021-10-14 12:14:37 -0300 566) 			//TODO: reread the oemLogo property.
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/iddlg.cpp 121 (seta7D5 2021-10-14 12:14:37 -0300 121)    //TODO::Edit_LimitText(GetDlgItem(IDC_WORKGROUP), DNLEN);
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/iddlg.cpp 371 (seta7D5 2021-10-14 12:14:37 -0300 371)             //TODOSetModified(wID);
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/iddlg.cpp 381 (seta7D5 2021-10-14 12:14:37 -0300 381)             //TODOSetChanged(wID);
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/cmsnapin.cpp 47 (seta7D5 2021-10-14 12:14:37 -0300 47) 		// TODO : Add code here to add additional pages
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/advanced.cpp 157 (seta7D5 2021-10-14 12:14:37 -0300 157)    // LPPSHNOTIFY psh;//TODO = (LPPSHNOTIFY)pnmh;
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/common.cpp 57 (seta7D5 2021-10-14 12:14:37 -0300 57)    //TODOerror(parent, hr, message, IDS_APP_TITLE);
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/common.cpp 62 (seta7D5 2021-10-14 12:14:37 -0300 62)    //TODOAppMessage(parent, String::load(messageResID));
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/common.cpp 68 (seta7D5 2021-10-14 12:14:37 -0300 68)    /*TODOMessageBox(parent,
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/cmprops/startuppage.cpp 954 (seta7D5 2021-10-14 12:14:37 -0300 954) 	//TODO: really expand the vars.
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/common/servicethread.cpp 253 (seta7D5 2021-10-14 12:14:37 -0300 253) // TODO: merge the Connects()
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/common/connectthread.cpp 40 (seta7D5 2021-10-14 12:14:37 -0300 40) 		//TODO: If the thread is running we will have to terminate it.
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/common/connectthread.cpp 66 (seta7D5 2021-10-14 12:14:37 -0300 66) //TODO: I don't know what this function does. But will try to find out
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/common/connectthread.cpp 229 (seta7D5 2021-10-14 12:14:37 -0300 229) 		return true;			//TODO: check this return value
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/wmicntl/snapin/wmisnapin.h 375 (seta7D5 2021-10-14 12:14:37 -0300 375) 		// TODO : Add code to handle notifications that set lpDataObject == NULL.
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/wmicntl/snapin/wmisnapin.cpp 95 (seta7D5 2021-10-14 12:14:37 -0300 95) 	// TODO : Add code for SDI_CHILDREN 
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/wmicntl/principal.cpp 239 (seta7D5 2021-10-14 12:14:37 -0300 239) //TODO: match the magic strings when provider catches up.
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/wmicntl/nspage.cpp 261 (seta7D5 2021-10-14 12:14:37 -0300 261) 		//	bool hideMfls = false;  //TODO
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/wmicntl/nspage.cpp 269 (seta7D5 2021-10-14 12:14:37 -0300 269) 				// TODO: hide the 'hide mfls' checkbox. Moot point on old targets.
+^b2db264153 NT/admin/wmi/wbem/shell/atlui/wmicntl/nspage.cpp 370 (seta7D5 2021-10-14 12:14:37 -0300 370) 					// TODO: this one's more complex.
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/controls.htm 248 (seta7D5 2021-10-14 12:14:37 -0300 248) 		// TODO - just handle INSTANCENAME case for now
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/controls.htm 292 (seta7D5 2021-10-14 12:14:37 -0300 292) 				// TODO - this COULD be an object path - need to
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/controls.htm 411 (seta7D5 2021-10-14 12:14:37 -0300 411) 			// Get the last  element (TODO - empty arrays?)
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/controls.htm 426 (seta7D5 2021-10-14 12:14:37 -0300 426) 		// TODO - if first characters are "ref:" then treat
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/controls.htm 452 (seta7D5 2021-10-14 12:14:37 -0300 452) 				// TODO - build up <VALUE.ARRAY> for this
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/controls.htm 459 (seta7D5 2021-10-14 12:14:37 -0300 459) 			// Get the last  element (TODO - empty arrays?)
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/detailpage20.xsl 3 (seta7D5 2021-10-14 12:14:37 -0300 3) <!-- TODO: qualifier flavors here + extend XML translator to generate WMI-specific flavors too-->
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/xmltestdhtml/classpage20.xsl 3 (seta7D5 2021-10-14 12:14:37 -0300 3) <!-- TODO: qualifier flavors here + extend XML translator to generate WMI-specific flavors too-->
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/cpumon/controls.htm 302 (seta7D5 2021-10-14 12:14:37 -0300 302) 		// TODO - just handle INSTANCENAME case for now
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/cpumon/controls.htm 346 (seta7D5 2021-10-14 12:14:37 -0300 346) 				// TODO - this COULD be an object path - need to
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/cpumon/controls.htm 465 (seta7D5 2021-10-14 12:14:37 -0300 465) 			// Get the last  element (TODO - empty arrays?)
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/cpumon/controls.htm 480 (seta7D5 2021-10-14 12:14:37 -0300 480) 		// TODO - if first characters are "ref:" then treat
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/cpumon/controls.htm 506 (seta7D5 2021-10-14 12:14:37 -0300 506) 				// TODO - build up <VALUE.ARRAY> for this
+^b2db264153 NT/admin/wmi/wbem/xmltransport/samples/cpumon/controls.htm 513 (seta7D5 2021-10-14 12:14:37 -0300 513) 			// Get the last  element (TODO - empty arrays?)
+^b2db264153 NT/admin/wmi/wbem/xmltransport/server/wmi2xml/wmi2xml.h 30 (seta7D5 2021-10-14 12:14:37 -0300 30) // TODO : Make sure this is disabled before release
+^b2db264153 NT/admin/wmi/wbem/common/utillib/wbemtime.cpp 966 (seta7D5 2021-10-14 12:14:37 -0300 966)     m_Time = 0;        //todo, check values!!!
+^b2db264153 NT/admin/wmi/wbem/common/wmiutils/pathparse.cpp 2055 (seta7D5 2021-10-14 12:14:37 -0300 2055) 		// todo, need to define cim compliance
+^b2db264153 NT/admin/wmi/wbem/common/wmiutils/opathlex2.cpp 116 (seta7D5 2021-10-14 12:14:37 -0300 116) //TODO
+^b2db264153 NT/admin/wmi/wbem/policman/loader/loader.cpp 18 (seta7D5 2021-10-14 12:14:37 -0300 18) // TODO: attempt to create namespace if not available.
+^b2db264153 NT/admin/wmi/wbem/policman/provider/policsom.cpp 377 (seta7D5 2021-10-14 12:14:37 -0300 377) // TODO: Optimize by caching namespace pointers.
+^b2db264153 NT/admin/wmi/wbem/policman/provider/policsom.cpp 458 (seta7D5 2021-10-14 12:14:37 -0300 458) // TODO: Optimize w/ ExecMethodASYNC
+^b2db264153 NT/admin/wmi/wbem/policman/utility.cpp 361 (seta7D5 2021-10-14 12:14:37 -0300 361) // TODO: attempt to create namespace if not available.
+^b2db264153 NT/admin/wmi/wbem/providers/snmpprovider/compilers/smi2smir/lib/simclib/oidtree.cpp 720 (seta7D5 2021-10-14 12:14:37 -0300 720) 	// TODO: WHY AM I ASSUMING ONLY ONE NAMED NODE????
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/cimwin32a/ntdomain.cpp 746 (seta7D5 2021-10-14 12:14:37 -0300 746) 			// TODO:
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/cimwin32a/ntdomain.cpp 786 (seta7D5 2021-10-14 12:14:37 -0300 786) 			// TODO:
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/cimwin32a/usebinding.cpp 17 (seta7D5 2021-10-14 12:14:37 -0300 17) CBinding UserToDomain(
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/cimwin32a/usebinding.cpp 28 (seta7D5 2021-10-14 12:14:37 -0300 28) CBinding GroupToDomain(
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/cimwin32a/win32_controllerhashub.cpp 47 (seta7D5 2021-10-14 12:14:37 -0300 47) CContHasHub UserToDomain(
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/common/dllutils.cpp 1969 (seta7D5 2021-10-14 12:14:37 -0300 1969)                     hr = WinErrorToWBEMhResult(RtlNtStatusToDosError(status));
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/common/cmdh.cpp 807 (seta7D5 2021-10-14 12:14:37 -0300 807) 			dwResult = RtlNtStatusToDosError ( (NTSTATUS)NtCurrentTeb()->LastStatusValue );
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/port.cpp 403 (seta7D5 2021-10-14 12:14:37 -0300 403) // TODO: I don't think aliased ports even exist on NT, in which case this
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/smbios.h 409 (seta7D5 2021-10-14 12:14:37 -0300 409) 	// todo...
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.h 141 (seta7D5 2021-10-14 12:14:37 -0300 141) 			DWORD dwWhatToDo, 
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/videocfg.cpp 494 (seta7D5 2021-10-14 12:14:37 -0300 494) 			// TODO: Win32_DisplayConfiguration and Win32_VideoConfiguration seem
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/environment.cpp 427 (seta7D5 2021-10-14 12:14:37 -0300 427)  *  COMMENTS    : Logic here is way too deep & convoluted TODO! fix.
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/netadaptercfg.cpp 1518 (seta7D5 2021-10-14 12:14:37 -0300 1518) 	// TODO: This is a post release DCR.
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/netadaptercfg.cpp 7932 (seta7D5 2021-10-14 12:14:37 -0300 7932) 	// TODO: notifications? what else ...
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/win32_classiccomclasssetting.cpp 524 (seta7D5 2021-10-14 12:14:37 -0300 524) 		//TODO:get hlp/tlb file
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/msinfo_cdrom.cpp 93 (seta7D5 2021-10-14 12:14:37 -0300 93)     // TODO: ADD THIS IDS TO STRINGG.CPP & H:
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/msinfo_cdrom.cpp 327 (seta7D5 2021-10-14 12:14:37 -0300 327) //	TODO: flush the disk cache
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/msinfo_cdrom.cpp 559 (seta7D5 2021-10-14 12:14:37 -0300 559) 	//	TODO: delete the file after the test is done
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/msinfo_cdrom.cpp 1359 (seta7D5 2021-10-14 12:14:37 -0300 1359) //	TODO: see if there are Plug N' Play functions for doing this
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/win32_componentcategory.cpp 301 (seta7D5 2021-10-14 12:14:37 -0300 301) 	//NOTE//TODO:: If we're not using the default OLE task memory allocator , get the right IMalloc .
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/cpuid.cpp 1449 (seta7D5 2021-10-14 12:14:37 -0300 1449) // TODO: Counter function for IA-64
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.cpp 242 (seta7D5 2021-10-14 12:14:37 -0300 242) 	DWORD dwWhatToDo,
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.cpp 331 (seta7D5 2021-10-14 12:14:37 -0300 331) 		if (dwWhatToDo & REFRESH_INSTANCE)
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.cpp 363 (seta7D5 2021-10-14 12:14:37 -0300 363)         if (bRet && !(dwWhatToDo & QUERY_KEYS_ONLY))
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.cpp 375 (seta7D5 2021-10-14 12:14:37 -0300 375)         if (bRet && !(dwWhatToDo & QUERY_KEYS_ONLY))
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.cpp 390 (seta7D5 2021-10-14 12:14:37 -0300 390) 			if (!(dwWhatToDo & QUERY_KEYS_ONLY))
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.cpp 397 (seta7D5 2021-10-14 12:14:37 -0300 397) 		if (dwWhatToDo & ENUMERATE_INSTANCES)
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/modem.cpp 407 (seta7D5 2021-10-14 12:14:37 -0300 407) 	if ((dwWhatToDo & REFRESH_INSTANCE) && !bRet)
+^b2db264153 NT/admin/wmi/wbem/providers/win32provider/providers/smbiosprov.cpp 2059 (seta7D5 2021-10-14 12:14:37 -0300 2059) // TODO: Until the Win32_Battery supports more than one internal battery, there's
+^b2db264153 NT/admin/wmi/wbem/providers/dsprovider/queryconv.cpp 214 (seta7D5 2021-10-14 12:14:37 -0300 214) 		// TODO - WinMgmt should not allow this. It should check that the property type matches the property value
+^b2db264153 NT/admin/wmi/wbem/providers/nteventprovider/core/ql.cpp 161 (seta7D5 2021-10-14 12:14:37 -0300 161) //  WCHARToDOUBLE
+^b2db264153 NT/admin/wmi/wbem/providers/nteventprovider/core/ql.cpp 169 (seta7D5 2021-10-14 12:14:37 -0300 169) DOUBLE WCHARToDOUBLE(WCHAR * pConv, bool & bSuccess)
+^b2db264153 NT/admin/wmi/wbem/providers/nteventprovider/core/ql.cpp 806 (seta7D5 2021-10-14 12:14:37 -0300 806)         Tolerance.m_fTolerance = WCHARToDOUBLE(m_pTokenText, bSuccess);
+^b2db264153 NT/admin/wmi/wbem/providers/nteventprovider/core/ql.cpp 1302 (seta7D5 2021-10-14 12:14:37 -0300 1302)         V_R8(&m_vTypedConst) = WCHARToDOUBLE(m_pTokenText, bSuccess);
+^b2db264153 NT/admin/wmi/wbem/providers/nteventprovider/core/ql.cpp 1554 (seta7D5 2021-10-14 12:14:37 -0300 1554)         Tolerance.m_fTolerance = WCHARToDOUBLE(m_pTokenText, bSuccess);
+^b2db264153 NT/admin/wmi/wbem/scripting/test/whistler/objpath/item.vbs 25 (seta7D5 2021-10-14 12:14:37 -0300 25) ' TODO - add Item tests for results sets from UMI objects
+^b2db264153 NT/admin/wmi/wbem/scripting/wbemdisp.dsp 461 (seta7D5 2021-10-14 12:14:37 -0300 461) SOURCE=.\TODO.txt
+^b2db264153 NT/admin/wmi/wbem/scripting/demos/wmihost/hosttest/stdafx.cpp 7 (seta7D5 2021-10-14 12:14:37 -0300 7) // TODO: reference any additional headers you need in STDAFX.H
+^b2db264153 NT/admin/wmi/wbem/scripting/demos/wmihost/hosttest/stdafx.h 14 (seta7D5 2021-10-14 12:14:37 -0300 14) // TODO: reference additional headers your program requires here
+^b2db264153 NT/admin/wmi/wbem/scripting/demos/wmihost/hosttest/readme.txt 31 (seta7D5 2021-10-14 12:14:37 -0300 31) AppWizard uses "TODO:" to indicate parts of the source code you
+^b2db264153 NT/admin/wmi/wbem/scripting/demos/wmihost/wmihost.cpp 201 (seta7D5 2021-10-14 12:14:37 -0300 201) 	// TODO - host should support SCRIPTINFO_ITYPEINFO
+^b2db264153 NT/admin/wmi/wbem/scripting/objsink.h 69 (seta7D5 2021-10-14 12:14:37 -0300 69) 		// TODO: What if lObjectCount = 0 ?
+^b2db264153 NT/admin/wmi/wbem/scripting/objsink.h 195 (seta7D5 2021-10-14 12:14:37 -0300 195) 		// TODO: ASSERT that m_pFirst and m_pLast are NULL.  In other words,
+^b2db264153 NT/admin/wmi/wbem/scripting/objsink.h 282 (seta7D5 2021-10-14 12:14:37 -0300 282) 			// TODO: What if allocation fails?
+^b2db264153 NT/admin/wmi/wbem/scripting/objsink.h 315 (seta7D5 2021-10-14 12:14:37 -0300 315) 			// TODO: What if allocation fails?
+^b2db264153 NT/admin/wmi/wbem/sdk/vc7/wmiscriptutils/wmiobjectbroker.cpp 23 (seta7D5 2021-10-14 12:14:37 -0300 23) 		// TODO: Do we want this check to enable us to work from WSH?
+^b2db264153 NT/admin/wmi/wbem/sdk/vc7/wmiscriptutils/commonfuncs.cpp 213 (seta7D5 2021-10-14 12:14:37 -0300 213) 		// TODO: Make this more robust
+^b2db264153 NT/admin/wmi/wbem/sdk/vc7/wmiscriptutils/commonfuncs.cpp 807 (seta7D5 2021-10-14 12:14:37 -0300 807) 		// TODO: Maybe reuse some of the code from IsCreateObjectAllowed
+^b2db264153 NT/admin/wmi/wbem/sdk/vc7/wmiscriptutils/commonfuncs.cpp 968 (seta7D5 2021-10-14 12:14:37 -0300 968) 			// TODO: BUG: If we are loaded in an HTA, hr returns S_OK, but 
+^b2db264153 NT/admin/wmi/wbem/sdk/framedyn/eventprovider.cpp 40 (seta7D5 2021-10-14 12:14:37 -0300 40) //              TODO: begin a new thread, return synchronously.
+^b2db264153 NT/admin/wmi/wbem/sdk/framedyn/eventprovider.cpp 77 (seta7D5 2021-10-14 12:14:37 -0300 77)     // TODO: Fix cast hack, maybe base level fcn is wrong?
+^b2db264153 NT/admin/wmi/wbem/sdk/framedyn/eventprovider.cpp 83 (seta7D5 2021-10-14 12:14:37 -0300 83)     // TODO: Fix cast hack, maybe base level fcn is wrong?
+^b2db264153 NT/admin/wmi/wbem/sdk/framedyn/provider.cpp 185 (seta7D5 2021-10-14 12:14:37 -0300 185)     // TODO: implement cache flush
+^b2db264153 NT/admin/wmi/wbem/sdk/framedyn/provider.cpp 291 (seta7D5 2021-10-14 12:14:37 -0300 291)     // TODO: Implement cache
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/binary.inl 15 (seta7D5 2021-10-14 12:14:37 -0300 15) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/binary.inl 30 (seta7D5 2021-10-14 12:14:37 -0300 30) //  TODO - comment this function!
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/binary.inl 45 (seta7D5 2021-10-14 12:14:37 -0300 45) //  TODO - Comment this function.
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/binary.inl 60 (seta7D5 2021-10-14 12:14:37 -0300 60) //  TODO - Comment this function!
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/_errorrep.inl 15 (seta7D5 2021-10-14 12:14:37 -0300 15) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/_errorrep.inl 38 (seta7D5 2021-10-14 12:14:37 -0300 38) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/_errorrep.inl 62 (seta7D5 2021-10-14 12:14:37 -0300 62) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/_errorrep.inl 85 (seta7D5 2021-10-14 12:14:37 -0300 85) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/locitem.inl 763 (seta7D5 2021-10-14 12:14:37 -0300 763) //  TODO (eduardof) - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/locitem.inl 777 (seta7D5 2021-10-14 12:14:37 -0300 777) //  TODO (eduardof) - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/esputil/locitem.inl 791 (seta7D5 2021-10-14 12:14:37 -0300 791) //  TODO (eduardof) - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/afxwin.h_ 1830 (seta7D5 2021-10-14 12:14:37 -0300 1830) 	dscOKToDo,
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/afxwin.h_ 1833 (seta7D5 2021-10-14 12:14:37 -0300 1833) 	dscAboutToDo,
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/afxwin.h_ 1834 (seta7D5 2021-10-14 12:14:37 -0300 1834) 	dscFailedToDo,
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/locutil/_errorrep.inl 15 (seta7D5 2021-10-14 12:14:37 -0300 15) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/locutil/locstr.inl 69 (seta7D5 2021-10-14 12:14:37 -0300 69) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/locutil/locstr.inl 147 (seta7D5 2021-10-14 12:14:37 -0300 147) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/mit/mitutil/locvar.inl 206 (seta7D5 2021-10-14 12:14:37 -0300 206) //  TODO - comment this function
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/mit/mitutil/ltdebug.h 108 (seta7D5 2021-10-14 12:14:37 -0300 108) // TODO - find a better place for this
+^b2db264153 NT/admin/wmi/wbem/tools/locstudioparser/inc/mit/inc/mitctrl.h 18 (seta7D5 2021-10-14 12:14:37 -0300 18) //TODO get this from some other place
+^b2db264153 NT/admin/wmi/wbem/winmgmt/msg/msgsvc.cpp 175 (seta7D5 2021-10-14 12:14:37 -0300 175)         // wait for async thread to complete. TODO: print error here if 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/refrcach.h 39 (seta7D5 2021-10-14 12:14:37 -0300 39) 	//TODO: How will we get this?
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/mrshbase.cpp 249 (seta7D5 2021-10-14 12:14:37 -0300 249)         // TODO: here we assume the host name is in dns form.  Not sure 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastinst.cpp 3817 (seta7D5 2021-10-14 12:14:37 -0300 3817)         // DEVNOTE:TODO:PAUL - Comment this out if it's getting in your way
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastinst.cpp 3856 (seta7D5 2021-10-14 12:14:37 -0300 3856)                         // DEVNOTE:TODO:PAUL - Comment this out if it's getting in your way
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastinst.cpp 3884 (seta7D5 2021-10-14 12:14:37 -0300 3884)         // DEVNOTE:TODO:PAUL - Comment this out if it's getting in your way
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/shmlock.h 92 (seta7D5 2021-10-14 12:14:37 -0300 92)                     // DEVNOTE:TODO:SANJ - What if tick count rollsover??? a timeout will occur.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastqual.cpp 2616 (seta7D5 2021-10-14 12:14:37 -0300 2616)                         // DEVNOTE:TODO:SANJ - See if there's an easier way to do this
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastqual.cpp 3241 (seta7D5 2021-10-14 12:14:37 -0300 3241)     // DEVNOTE:TODO:SANJ - Is this right?  We didn't find the value so we really
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastqual.cpp 3284 (seta7D5 2021-10-14 12:14:37 -0300 3284)     // DEVNOTE:TODO:SANJ - Fixup memory checks so return is GOOD
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/refrcli.cpp 2434 (seta7D5 2021-10-14 12:14:37 -0300 2434)                 // DEVNOTE:TODO:SANJ - Do we care about this return code?
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/refrcli.cpp 2696 (seta7D5 2021-10-14 12:14:37 -0300 2696)     //  DEVNOTE:TODO:SANJ - We could make this much faster if we did some sorting on the
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/refrcli.cpp 2778 (seta7D5 2021-10-14 12:14:37 -0300 2778)             // DEVNOTE:TODO:SANJ - What about other errors?  For now, we'll lose the local
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastobj.cpp 2959 (seta7D5 2021-10-14 12:14:37 -0300 2959) // DEVNOTE:TODO:MEMORY - We should change this header to return an HRESULT
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastobj.h 1613 (seta7D5 2021-10-14 12:14:37 -0300 1613) // DEVNOTE:TODO:MEMORY - We should change this header to return an HRESULT
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/wbemclasstoidmap.cpp 19 (seta7D5 2021-10-14 12:14:37 -0300 19) //  Todo:       Create a new helper method to allocate and fetch
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastprop.h 31 (seta7D5 2021-10-14 12:14:37 -0300 31) // DEVNOTE:TODO - Take this OUT for final release.  It's just here to help us debug stuff
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastobjnkup 830 (seta7D5 2021-10-14 12:14:37 -0300 830)         // DEVNOTE:TODO:SJS - Can this ever return 0?
+^b2db264153 NT/admin/wmi/wbem/winmgmt/marshalers/coreprox/fastobjnkup 833 (seta7D5 2021-10-14 12:14:37 -0300 833)         // DEVNOTE:TODO:SJS - Can this ever return 0?
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/cimval.cpp 224 (seta7D5 2021-10-14 12:14:37 -0300 224)         CoerceToDouble();
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/cimval.cpp 411 (seta7D5 2021-10-14 12:14:37 -0300 411) void CCimValue::CoerceToDouble()
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/cimval.cpp 588 (seta7D5 2021-10-14 12:14:37 -0300 588)         rValB.CoerceToDouble();
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/cimval.cpp 594 (seta7D5 2021-10-14 12:14:37 -0300 594)         rValA.CoerceToDouble();
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/ql.cpp 71 (seta7D5 2021-10-14 12:14:37 -0300 71) //  WCHARToDOUBLE
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/ql.cpp 79 (seta7D5 2021-10-14 12:14:37 -0300 79) DOUBLE WCHARToDOUBLE(WCHAR * pConv, bool & bSuccess)
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/ql.cpp 797 (seta7D5 2021-10-14 12:14:37 -0300 797)         Tolerance.m_fTolerance = WCHARToDOUBLE(m_pTokenText, bSuccess);
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/ql.cpp 1291 (seta7D5 2021-10-14 12:14:37 -0300 1291)         V_R8(&m_vTypedConst) = WCHARToDOUBLE(m_pTokenText, bSuccess);
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/ql.cpp 1543 (seta7D5 2021-10-14 12:14:37 -0300 1543)         Tolerance.m_fTolerance = WCHARToDOUBLE(m_pTokenText, bSuccess);
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/cimval.h 50 (seta7D5 2021-10-14 12:14:37 -0300 50)     void CoerceToDouble();
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/genutils.cpp 659 (seta7D5 2021-10-14 12:14:37 -0300 659)     //todo, according to the help file, the path can be null which is
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemcomn/cwbemtime.cpp 389 (seta7D5 2021-10-14 12:14:37 -0300 389)     m_Time = 0;        //todo, check values!!!
+^b2db264153 NT/admin/wmi/wbem/winmgmt/coredll/wmifinalizer.cpp 1185 (seta7D5 2021-10-14 12:14:37 -0300 1185)                 //TODO: WHAT HAPPENS HERE?
+^b2db264153 NT/admin/wmi/wbem/winmgmt/coredll/wbemname.cpp 3127 (seta7D5 2021-10-14 12:14:37 -0300 3127)             ParsedObjectPath* pOutput = 0;         // todo, convert to use new parser
+^b2db264153 NT/admin/wmi/wbem/winmgmt/coredll/wbemname.cpp 4214 (seta7D5 2021-10-14 12:14:37 -0300 4214)                 // todo, check type
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/cvariant.cpp 490 (seta7D5 2021-10-14 12:14:37 -0300 490)             if(bstr == NULL)   {  // todo, free previously allocated strings!
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/cvariant.cpp 502 (seta7D5 2021-10-14 12:14:37 -0300 502)         if(sc) {    // todo, cleanup???
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/provperf.cpp 1490 (seta7D5 2021-10-14 12:14:37 -0300 1490)     //todo todo, remove this demo specical
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/provperf.cpp 1490 (seta7D5 2021-10-14 12:14:37 -0300 1490)     //todo todo, remove this demo specical
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/provperf.cpp 1496 (seta7D5 2021-10-14 12:14:37 -0300 1496)     //todo todo, remove this demo specical
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/provperf.cpp 1496 (seta7D5 2021-10-14 12:14:37 -0300 1496)     //todo todo, remove this demo specical
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/provreg.cpp 354 (seta7D5 2021-10-14 12:14:37 -0300 354)         return cVar.SetData(cpTemp,VT_I8);  //todo fix this VT_I8 dont work!!!
+^b2db264153 NT/admin/wmi/wbem/winmgmt/stdprov/perfcach.cpp 398 (seta7D5 2021-10-14 12:14:37 -0300 398)             //todo, check for errors on add.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscli/twopropnode.cpp 358 (seta7D5 2021-10-14 12:14:37 -0300 358)             // TODO: check to see if CheapCompare is guaranteed to return -1,0,1
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscli/twopropnode.h 181 (seta7D5 2021-10-14 12:14:37 -0300 181) // TODO: when COM catches up with us, support INT64's as numeric types
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscli/twopropnode.h 243 (seta7D5 2021-10-14 12:14:37 -0300 243) // TODO: when COM catches up with us, support INT64's as numeric types
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscli/filtprox.cpp 2435 (seta7D5 2021-10-14 12:14:37 -0300 2435) 	    // TODO: WBEM_FLAG_BATCH_IF_NEEDED currently works the same as
+^b2db264153 NT/admin/wmi/wbem/winmgmt/wbemtest/wbemtest.cpp 3260 (seta7D5 2021-10-14 12:14:37 -0300 3260) // TODO: WM_COPY doesn't work for listbox so we need to code
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/permcons.cpp 93 (seta7D5 2021-10-14 12:14:37 -0300 93)     // TODO : this is temporary and will go away when the consumer no longer
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/qsink.cpp 110 (seta7D5 2021-10-14 12:14:37 -0300 110)         // TODO: Fix this so that we put multiple events in the record. 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/qsink.cpp 404 (seta7D5 2021-10-14 12:14:37 -0300 404)             // TODO : XACT - aquire txn from DTC.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/qsink.cpp 412 (seta7D5 2021-10-14 12:14:37 -0300 412)             // TODO : handle error reporting here.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/nsrep.cpp 813 (seta7D5 2021-10-14 12:14:37 -0300 813)     // TODO: For now there is a 1 to 1 mapping between a sink and a consumer.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/delivrec.cpp 53 (seta7D5 2021-10-14 12:14:37 -0300 53)         // TODO : should clone the object here later. 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/provreg.cpp 1048 (seta7D5 2021-10-14 12:14:37 -0300 1048)             // TODO : We need to mark the provider as inactive.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/provreg.cpp 3084 (seta7D5 2021-10-14 12:14:37 -0300 3084)         // TODO: Out usage counts can easily get out of wack because of 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/tempcons.cpp 151 (seta7D5 2021-10-14 12:14:37 -0300 151)         // TODO: Separate out an InternalTempConsumer class that is used 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/qsink.h 78 (seta7D5 2021-10-14 12:14:37 -0300 78)     CWbemPtr<IWmiMessageQueueReceiver> m_pXactRcvr; // TODO : XACT
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/qsink.h 85 (seta7D5 2021-10-14 12:14:37 -0300 85)     CWbemPtr<IWmiMessageSendReceive> m_pXactSend; // TODO : XACT
+^b2db264153 NT/admin/wmi/wbem/winmgmt/ess3/qsink.h 148 (seta7D5 2021-10-14 12:14:37 -0300 148)     // TODO : a lot of these parameters should go inside the context.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/xfiles/varobjheap.cpp 475 (seta7D5 2021-10-14 12:14:37 -0300 475) 	//TODO!  Do this properly!!!
+^b2db264153 NT/admin/wmi/wbem/winmgmt/xfiles/pagemgr.cpp 685 (seta7D5 2021-10-14 12:14:37 -0300 685) 		return RtlNtStatusToDosError( Status );        
+^b2db264153 NT/admin/wmi/wbem/winmgmt/xfiles/pagemgr.cpp 2129 (seta7D5 2021-10-14 12:14:37 -0300 2129) 		RtlNtStatusToDosError( status );
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/correlation/scenarios/stdtmpl.mof 242 (seta7D5 2021-10-14 12:14:37 -0300 242) // Causes problems with polling.  TODO: Later we should make it so that 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/correlation/tmplprov/tmplcomn.cpp 42 (seta7D5 2021-10-14 12:14:37 -0300 42)         // TODO : support embedded object template arguments.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/correlation/tmplprov/tmplcomn.cpp 120 (seta7D5 2021-10-14 12:14:37 -0300 120)             // TODO, if no prop name in key, then we should consult the 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/correlation/updprov/updstat.cpp 177 (seta7D5 2021-10-14 12:14:37 -0300 177) // TODO: Could optimize this to use Property handles instead of strings.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/correlation/updprov/updcmd.cpp 278 (seta7D5 2021-10-14 12:14:37 -0300 278)     // TODO: in the future we should be able to optimize the correlator 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/correlation/updprov/updcmd.cpp 432 (seta7D5 2021-10-14 12:14:37 -0300 432)     // TODO : I should be setting the bPropComp value in a token 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/noncom/utils/stdafx.cpp 7 (seta7D5 2021-10-14 12:14:37 -0300 7) // TODO: reference any additional headers you need in STDAFX.H
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/noncom/ncobjapi/stdafx.cpp 7 (seta7D5 2021-10-14 12:14:37 -0300 7) // TODO: reference any additional headers you need in STDAFX.H
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/noncom/ncobjapi/namedpipe.cpp 314 (seta7D5 2021-10-14 12:14:37 -0300 314)             // TODO: Should we close the ready event and then reopen it after we 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/noncom/ncprov/ncprovider.cpp 432 (seta7D5 2021-10-14 12:14:37 -0300 432)     // TODO: We need to indicate an error here.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/noncom/ncprov/ncprovider.cpp 476 (seta7D5 2021-10-14 12:14:37 -0300 476)                     // TODO: This is an error, but what to do?
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/stdcons/killtimer.h 190 (seta7D5 2021-10-14 12:14:37 -0300 190)     // TODO: consider use of a container that sorts itself.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/esscomp/stdcons/smtpcons/smtp.cpp 314 (seta7D5 2021-10-14 12:14:37 -0300 314) 		// TODO: Lots of duplicated code, here - fix.
+^b2db264153 NT/admin/wmi/wbem/winmgmt/mofcomp_dll/comobj.cpp 158 (seta7D5 2021-10-14 12:14:37 -0300 158)             Parser.SetToDoScopeCheck();
+^b2db264153 NT/admin/wmi/wbem/winmgmt/mofcomp_dll/mofdata.cpp 251 (seta7D5 2021-10-14 12:14:37 -0300 251)     // Connect up to namespace.  //TODO, PASS AUTHORITY IN THE CONTEXT
+^b2db264153 NT/admin/wmi/wbem/winmgmt/mofcomp_dll/moflex.cpp 1105 (seta7D5 2021-10-14 12:14:37 -0300 1105)     int iNumToDo = (iNum > 0) ? iNum : -iNum;
+^b2db264153 NT/admin/wmi/wbem/winmgmt/mofcomp_dll/moflex.cpp 1107 (seta7D5 2021-10-14 12:14:37 -0300 1107)     while(iSoFar < iNumToDo) 
+^b2db264153 NT/admin/wmi/wbem/winmgmt/mofcomp_dll/mofparse.h 66 (seta7D5 2021-10-14 12:14:37 -0300 66)     void SetToDoScopeCheck(){m_bDoScopeCheck = true;};
+^b2db264153 NT/admin/wmi/wbem/winmgmt/mofcomp_dll/moflex.h 138 (seta7D5 2021-10-14 12:14:37 -0300 138) //todo    wchar_t *m_pCurrWChar;       // points to the current character
+^b2db264153 NT/admin/wmi/wbem/winmgmt/mofcomp_dll/moflex.h 139 (seta7D5 2021-10-14 12:14:37 -0300 139) //todo    wchar_t *m_pLastWChar;       // points to the last valid character
+^b2db264153 NT/admin/dscmd/dsadd/dsadd.cpp 585 (seta7D5 2021-10-14 12:14:37 -0300 585)             // TODO: Should spew a clear message to the user
+^b2db264153 NT/admin/dscmd/dsquery/querybld.cpp 876 (seta7D5 2021-10-14 12:14:37 -0300 876)         // TODO: Need to provide the first param
+^b2db264153 NT/admin/dscmd/dsutil.cpp 6684 (seta7D5 2021-10-14 12:14:37 -0300 6684)         // TODO: Need to provide the first param
+^b2db264153 NT/admin/dscmd/dsget/display.cpp 790 (seta7D5 2021-10-14 12:14:37 -0300 790)             // TODO: This may cause a duplicate error message
+^b2db264153 NT/admin/dscmd/dsget/display.cpp 804 (seta7D5 2021-10-14 12:14:37 -0300 804)             // TODO: This may cause a duplicate error message
+^b2db264153 NT/admin/published/snapin/dsadmin.w 225 (seta7D5 2021-10-14 12:14:37 -0300 225) // TODO: add explaination
+^b2db264153 NT/admin/wmiprov/trustmon/domain.h 83 (seta7D5 2021-10-14 12:14:37 -0300 83)    // TODO: FSMO holder info???
+^b2db264153 NT/admin/wmiprov/trustmon/trust.cpp 724 (seta7D5 2021-10-14 12:14:37 -0300 724) // TODO: Code for NT4 ??
+^b2db264153 NT/admin/wmiprov/trustmon/domain.cpp 25 (seta7D5 2021-10-14 12:14:37 -0300 25) // TODO: string property listing the FSMOs owned by this DC?
+^b2db264153 NT/admin/wmiprov/trustmon/domain.cpp 172 (seta7D5 2021-10-14 12:14:37 -0300 172) // TODO: Code for NT4 ??
+^b2db264153 NT/admin/darwin/data/intl/error.ptg 153 (seta7D5 2021-10-14 12:14:37 -0300 153) 1925	Não tem privilégios suficientes para concluir esta instalação para todos os utilizadores da máquina. Inicie a sessão como administrador e depois repita esta instalação.
+^b2db264153 NT/admin/darwin/data/intl/error.esn 153 (seta7D5 2021-10-14 12:14:37 -0300 153) 1925	No tiene suficientes privilegios para completar esta instalación para todos los usuarios del equipo. Inicie la sesión como administrador y vuelva a realizar la instalación.
+^b2db264153 NT/admin/darwin/data/intl/error.ptb 36 (seta7D5 2021-10-14 12:14:37 -0300 36) 1306	Outro aplicativo tem acesso exclusivo ao arquivo '[2]'. Encerre todos os outros aplicativos e clique em 'Repetir'.
+^b2db264153 NT/admin/darwin/data/intl/error.ptb 153 (seta7D5 2021-10-14 12:14:37 -0300 153) 1925	Você não tem privilégios suficientes para concluir esta instalação para todos os usuários da máquina. Efetue logon como administrador e tente essa instalação novamente.
+^b2db264153 NT/admin/darwin/src/engine/engine.cpp 16465 (seta7D5 2021-10-14 12:14:37 -0300 16465) 		// TODO: cost patch removal - currently only patch caching is costed
+^b2db264153 NT/admin/darwin/src/engine/engine.cpp 16531 (seta7D5 2021-10-14 12:14:37 -0300 16531) 			// else uninstalling // TODO: cost for uninstall
+^b2db264153 NT/admin/darwin/src/engine/coreactn.cpp 46 (seta7D5 2021-10-14 12:14:37 -0300 46) 	::FileTimeToDosDateTime(&ft, &usDOSDate, &usDOSTime);
+^b2db264153 NT/admin/darwin/src/engine/dbfile.cpp 2090 (seta7D5 2021-10-14 12:14:37 -0300 2090) 	if (!::FileTimeToDosDateTime(&ft, &wDosDate, &wDosTime))
+^b2db264153 NT/admin/darwin/src/engine/path.cpp 3014 (seta7D5 2021-10-14 12:14:37 -0300 3014)         if (!WIN::FileTimeToDosDateTime(&ftLocalLastWrite, &wDosDate, &wDosTime))
+^b2db264153 NT/admin/darwin/src/engine/path.cpp 3015 (seta7D5 2021-10-14 12:14:37 -0300 3015)             return PostError(Imsg(idbgErrorInFileToDosDateTime));
+^b2db264153 NT/admin/darwin/src/engine/execute.cpp 2348 (seta7D5 2021-10-14 12:14:37 -0300 2348) 	//!! TODO: fairly expensive function that is called quite a bit
+^b2db264153 NT/admin/darwin/src/engine/execute.cpp 2349 (seta7D5 2021-10-14 12:14:37 -0300 2349) 	//!! TODO: cache backup folder when determined and compare volumes in next call
+^b2db264153 NT/admin/darwin/src/engine/execute.cpp 3077 (seta7D5 2021-10-14 12:14:37 -0300 3077) 	//!! TODO: make sure the record parameters are valid
+^b2db264153 NT/admin/darwin/src/engine/execute.cpp 10758 (seta7D5 2021-10-14 12:14:37 -0300 10758) 	//!! TODO??: check that other values have been set
+^b2db264153 NT/admin/darwin/src/engine/_engine.h 921 (seta7D5 2021-10-14 12:14:37 -0300 921) 	bool                  m_fLoggingFromPolicy; // policy has triggered logging  //TODO: rename to m_fTemporaryLog
+^b2db264153 NT/admin/darwin/src/msitools/orca/mainfrm.cpp 73 (seta7D5 2021-10-14 12:14:37 -0300 73) 	// TODO: add member initialization code here
+^b2db264153 NT/admin/darwin/src/msitools/orca/mainfrm.cpp 153 (seta7D5 2021-10-14 12:14:37 -0300 153) 	// TODO: Modify the Window class or styles here by modifying
+^b2db264153 NT/admin/darwin/src/msitools/orca/vald.cpp 366 (seta7D5 2021-10-14 12:14:37 -0300 366) 	// TODO: Add your control notification handler code here
+^b2db264153 NT/admin/darwin/src/msitools/orca/orcalstv.cpp 68 (seta7D5 2021-10-14 12:14:37 -0300 68) 	// TODO: add draw code here
+^b2db264153 NT/admin/darwin/src/msitools/orca/tablelst.cpp 578 (seta7D5 2021-10-14 12:14:37 -0300 578) 	// TODO: Add your specialized code here and/or call the base class
+^b2db264153 NT/admin/darwin/src/msitools/orca/tablevw.cpp 107 (seta7D5 2021-10-14 12:14:37 -0300 107) 	// TODO: Modify the Window class or styles here by modifying
+^b2db264153 NT/admin/darwin/src/msitools/orca/tablevw.cpp 173 (seta7D5 2021-10-14 12:14:37 -0300 173) 	// TODO: add extra initialization before printing
+^b2db264153 NT/admin/darwin/src/msitools/orca/tablevw.cpp 178 (seta7D5 2021-10-14 12:14:37 -0300 178) 	// TODO: add cleanup after printing
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.h 183 (seta7D5 2021-10-14 12:14:37 -0300 183) bool DoTheJob(int iTodo, const TCHAR* szProduct);
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.h 215 (seta7D5 2021-10-14 12:14:37 -0300 215) bool ClearFolders(int iTodo, const TCHAR* szProduct, bool fOrphan);
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.h 223 (seta7D5 2021-10-14 12:14:37 -0300 223) bool ClearProduct(int iTodo, const TCHAR* szProduct, bool fJustRemoveACLs, bool fOrphan);
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 111 (seta7D5 2021-10-14 12:14:37 -0300 111)                 typedef ULONG(NTAPI *pRtlNtStatusToDosError)(IN LONG Status);
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 113 (seta7D5 2021-10-14 12:14:37 -0300 113)                 pRtlNtStatusToDosError pConv = NULL;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 116 (seta7D5 2021-10-14 12:14:37 -0300 116)                     pConv = (pRtlNtStatusToDosError)GetProcAddress(hModule, "RtlNtStatusToDosError");
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 116 (seta7D5 2021-10-14 12:14:37 -0300 116)                     pConv = (pRtlNtStatusToDosError)GetProcAddress(hModule, "RtlNtStatusToDosError");
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 159 (seta7D5 2021-10-14 12:14:37 -0300 159) void LoadSpecialFolders(int iTodo)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 2574 (seta7D5 2021-10-14 12:14:37 -0300 2574) bool ClearFolders(int iTodo, const TCHAR* szProduct, bool fOrphan)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 2579 (seta7D5 2021-10-14 12:14:37 -0300 2579)     bool fJustRemoveACLs = (iTodo & iOnlyRemoveACLs) != 0;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 2583 (seta7D5 2021-10-14 12:14:37 -0300 2583)     if (iTodo & iRemoveUserProfileFolder)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 2634 (seta7D5 2021-10-14 12:14:37 -0300 2634)     if (iTodo & iRemoveWinMsiFolder)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 2666 (seta7D5 2021-10-14 12:14:37 -0300 2666)     if (iTodo & iRemoveConfigMsiFolder)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3420 (seta7D5 2021-10-14 12:14:37 -0300 3420) bool ClearProduct(int iTodo, const TCHAR* szProduct, bool fJustRemoveACLs, bool fOrphan)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3850 (seta7D5 2021-10-14 12:14:37 -0300 3850) bool DoTheJob(int iTodo, const TCHAR* szProduct)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3856 (seta7D5 2021-10-14 12:14:37 -0300 3856)     if ((iTodo & iAdjustSharedDLLCounts) && ((iTodo & iOnlyRemoveACLs) == 0))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3856 (seta7D5 2021-10-14 12:14:37 -0300 3856)     if ((iTodo & iAdjustSharedDLLCounts) && ((iTodo & iOnlyRemoveACLs) == 0))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3872 (seta7D5 2021-10-14 12:14:37 -0300 3872)     if (iTodo & iRemoveAllRegKeys)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3874 (seta7D5 2021-10-14 12:14:37 -0300 3874)         if (ClearRegistry((iTodo & iOnlyRemoveACLs) != 0) && ClearUninstallKey((iTodo & iOnlyRemoveACLs) != 0))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3874 (seta7D5 2021-10-14 12:14:37 -0300 3874)         if (ClearRegistry((iTodo & iOnlyRemoveACLs) != 0) && ClearUninstallKey((iTodo & iOnlyRemoveACLs) != 0))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3877 (seta7D5 2021-10-14 12:14:37 -0300 3877)             if (iTodo & iOnlyRemoveACLs)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3885 (seta7D5 2021-10-14 12:14:37 -0300 3885)     else if ((iTodo & iRemoveInProgressRegKey) != 0)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3887 (seta7D5 2021-10-14 12:14:37 -0300 3887)         if (!ClearInProgressKey((iTodo & iOnlyRemoveACLs) != 0))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3891 (seta7D5 2021-10-14 12:14:37 -0300 3891)     if ((iTodo & iRemoveUninstallKey) != 0)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3893 (seta7D5 2021-10-14 12:14:37 -0300 3893)         if (!ClearUninstallKey((iTodo & iOnlyRemoveACLs) != 0))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3897 (seta7D5 2021-10-14 12:14:37 -0300 3897)     if ((iTodo & iRemoveRollback) != 0)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3899 (seta7D5 2021-10-14 12:14:37 -0300 3899)         if (!ClearFolders(iTodo, szProduct, false /*fOrphan*/)) // del config.msi from all drives
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3901 (seta7D5 2021-10-14 12:14:37 -0300 3901)         if (!ClearRollbackKey((iTodo & iOnlyRemoveACLs) != 0))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3905 (seta7D5 2021-10-14 12:14:37 -0300 3905)     if ((iTodo & iRemoveAllFolders) == iRemoveAllFolders)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3907 (seta7D5 2021-10-14 12:14:37 -0300 3907)         if (ClearFolders(iTodo, szProduct, false /*fOrphan*/))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3910 (seta7D5 2021-10-14 12:14:37 -0300 3910)             if (iTodo & iOnlyRemoveACLs)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3919 (seta7D5 2021-10-14 12:14:37 -0300 3919)     if (iTodo & iStopService)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3925 (seta7D5 2021-10-14 12:14:37 -0300 3925)     if (((iTodo & iRemoveProduct) || (iTodo & iOrphanProduct)) && szProduct)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3925 (seta7D5 2021-10-14 12:14:37 -0300 3925)     if (((iTodo & iRemoveProduct) || (iTodo & iOrphanProduct)) && szProduct)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3926 (seta7D5 2021-10-14 12:14:37 -0300 3926)         if (!ClearProduct(iTodo, szProduct, (iTodo & iOnlyRemoveACLs) != 0, (iTodo & iOrphanProduct) ? true : false /*fOrphan*/))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3926 (seta7D5 2021-10-14 12:14:37 -0300 3926)         if (!ClearProduct(iTodo, szProduct, (iTodo & iOnlyRemoveACLs) != 0, (iTodo & iOrphanProduct) ? true : false /*fOrphan*/))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3926 (seta7D5 2021-10-14 12:14:37 -0300 3926)         if (!ClearProduct(iTodo, szProduct, (iTodo & iOnlyRemoveACLs) != 0, (iTodo & iOrphanProduct) ? true : false /*fOrphan*/))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3929 (seta7D5 2021-10-14 12:14:37 -0300 3929)     if ( (iTodo & iRemoveGarbageFiles) == iRemoveGarbageFiles )
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3942 (seta7D5 2021-10-14 12:14:37 -0300 3942)     unsigned int iTodo = 0;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3954 (seta7D5 2021-10-14 12:14:37 -0300 3954)             case '*': iTodo |= iRemoveAllNonStateData | iRemoveInProgressRegKey | iRemoveRollback;break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3955 (seta7D5 2021-10-14 12:14:37 -0300 3955)             case '!': iTodo |= iForceYes;                                                         break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3958 (seta7D5 2021-10-14 12:14:37 -0300 3958)             case 'a': iTodo |= iOnlyRemoveACLs;                                                   break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3959 (seta7D5 2021-10-14 12:14:37 -0300 3959)             case 'p': iTodo |= iRemoveInProgressRegKey;                                           break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3960 (seta7D5 2021-10-14 12:14:37 -0300 3960)             case 's': iTodo |= iRemoveRollback;                                                   break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3964 (seta7D5 2021-10-14 12:14:37 -0300 3964)             case 't': iTodo |= iRemoveProduct;                                                    break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3965 (seta7D5 2021-10-14 12:14:37 -0300 3965)             case 'o': iTodo |= iOrphanProduct;                                                    break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3966 (seta7D5 2021-10-14 12:14:37 -0300 3966)             case 'w': iTodo |= iForAllUsers;                                                      break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3967 (seta7D5 2021-10-14 12:14:37 -0300 3967)             case 'g': iTodo |= iRemoveGarbageFiles;                                                      break;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3980 (seta7D5 2021-10-14 12:14:37 -0300 3980)                 if (0 == _tcsicmp(szProduct, szAllProductsArg) && ((iTodo & iRemoveAllNonStateData) == iRemoveAllNonStateData))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 3985 (seta7D5 2021-10-14 12:14:37 -0300 3985)                 else if ((iTodo & iRemoveAllNonStateData) == iRemoveAllNonStateData)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4017 (seta7D5 2021-10-14 12:14:37 -0300 4017)             else if (iTodo & iRemoveAllNonStateData)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4023 (seta7D5 2021-10-14 12:14:37 -0300 4023)         else if (iTodo & ~(iRemoveRollback | iOnlyRemoveACLs | iRemoveInProgressRegKey | iForceYes | iRemoveGarbageFiles))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4050 (seta7D5 2021-10-14 12:14:37 -0300 4050)     const int iTodoRequiringPrompt = iRemoveAllFolders | iRemoveAllRegKeys | iAdjustSharedDLLCounts;
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4052 (seta7D5 2021-10-14 12:14:37 -0300 4052)     if (!(iTodo & iForceYes) && !(iTodo & iOnlyRemoveACLs) && ((iTodo & iTodoRequiringPrompt) == iTodoRequiringPrompt))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4052 (seta7D5 2021-10-14 12:14:37 -0300 4052)     if (!(iTodo & iForceYes) && !(iTodo & iOnlyRemoveACLs) && ((iTodo & iTodoRequiringPrompt) == iTodoRequiringPrompt))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4052 (seta7D5 2021-10-14 12:14:37 -0300 4052)     if (!(iTodo & iForceYes) && !(iTodo & iOnlyRemoveACLs) && ((iTodo & iTodoRequiringPrompt) == iTodoRequiringPrompt))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4052 (seta7D5 2021-10-14 12:14:37 -0300 4052)     if (!(iTodo & iForceYes) && !(iTodo & iOnlyRemoveACLs) && ((iTodo & iTodoRequiringPrompt) == iTodoRequiringPrompt))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4052 (seta7D5 2021-10-14 12:14:37 -0300 4052)     if (!(iTodo & iForceYes) && !(iTodo & iOnlyRemoveACLs) && ((iTodo & iTodoRequiringPrompt) == iTodoRequiringPrompt))
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4065 (seta7D5 2021-10-14 12:14:37 -0300 4065)     LoadSpecialFolders(iTodo);
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4067 (seta7D5 2021-10-14 12:14:37 -0300 4067)     if ( iTodo & iForAllUsers )
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4072 (seta7D5 2021-10-14 12:14:37 -0300 4072)             if ( iTodo & iOnlyRemoveACLs)
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4076 (seta7D5 2021-10-14 12:14:37 -0300 4076)             fError |= !DoTheJob(iTodo, szProduct);
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4082 (seta7D5 2021-10-14 12:14:37 -0300 4082)         fError = !DoTheJob(iTodo, szProduct);
+^b2db264153 NT/admin/darwin/src/msitools/msizap/msizap.cpp 4091 (seta7D5 2021-10-14 12:14:37 -0300 4091) 		if (!g_fDataFound && !(iTodo & iOnlyRemoveACLs))
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/util.cpp 170 (seta7D5 2021-10-14 12:14:37 -0300 170) 		 //TODO...
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/loganald.cpp 2318 (seta7D5 2021-10-14 12:14:37 -0300 2318) //TODO...
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/loganald.cpp 2331 (seta7D5 2021-10-14 12:14:37 -0300 2331)          //TODO
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/loganald.cpp 2410 (seta7D5 2021-10-14 12:14:37 -0300 2410) //5-16-2001, TODO....
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/loganald.cpp 2424 (seta7D5 2021-10-14 12:14:37 -0300 2424) //TODO
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/logparse.cpp 490 (seta7D5 2021-10-14 12:14:37 -0300 490) //TODO, possibly make this customizable so user can add/delete which errors they want to ignore
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/logparse.cpp 495 (seta7D5 2021-10-14 12:14:37 -0300 495) //END TODO
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/optionsd.cpp 94 (seta7D5 2021-10-14 12:14:37 -0300 94) //FUTURE TODO, need to parse m_cstrIgnoredErrors
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/optionsd.cpp 131 (seta7D5 2021-10-14 12:14:37 -0300 131) 	//END TODO
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/wilogutl.rc 2397 (seta7D5 2021-10-14 12:14:37 -0300 2397)     IDS_WI_ERROR_2326       "Error in FileToDosDateTime. "
+^b2db264153 NT/admin/darwin/src/msitools/wilogutl/res/allerr_archored.htm 1774 (seta7D5 2021-10-14 12:14:37 -0300 1774) <TD width=70%>Error in FileToDosDateTime. </TD>
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/msistuff.cpp 1862 (seta7D5 2021-10-14 12:14:37 -0300 1862) 	// TODO - could check for overlaps in ranges
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/msistuff.cpp 1922 (seta7D5 2021-10-14 12:14:37 -0300 1922) 		// TODO - watch for overflow
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/msistuff.cpp 1982 (seta7D5 2021-10-14 12:14:37 -0300 1982) 	// TODO for each file in this image that exists, check all
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/msistuff.cpp 2156 (seta7D5 2021-10-14 12:14:37 -0300 2156) 	// TODO ensure all Media.DiskId, PatchPackage.PatchId < iDiskId
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/msistuff.cpp 2381 (seta7D5 2021-10-14 12:14:37 -0300 2381) 	// TODO ensure all Media.DiskId, PatchPackage.PatchId < iDiskId
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/msistuff.cpp 2793 (seta7D5 2021-10-14 12:14:37 -0300 2793) 	// TODO - could check for overlaps in ranges
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/msistuff.cpp 3090 (seta7D5 2021-10-14 12:14:37 -0300 3090) 	// TODO - could check for overlaps in ranges
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/patchcache.cpp 275 (seta7D5 2021-10-14 12:14:37 -0300 275) 			//todo: trace dwError possibly
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/patchcache.cpp 287 (seta7D5 2021-10-14 12:14:37 -0300 287) 			//todo: trace dwError possibly
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/patchcache.cpp 365 (seta7D5 2021-10-14 12:14:37 -0300 365) 					//todo: trace dwResult...
+^b2db264153 NT/admin/darwin/src/msitools/patchwiz/fileptch.cpp 1469 (seta7D5 2021-10-14 12:14:37 -0300 1469) 	pod.ExtendedOptionFlags    = 0;    // TODO - what is allowable here?
+^b2db264153 NT/admin/darwin/src/handler/controls.cpp 2489 (seta7D5 2021-10-14 12:14:37 -0300 2489) 		// ToDo: integer only validation!
+^b2db264153 NT/admin/darwin/src/handler/controls.cpp 7374 (seta7D5 2021-10-14 12:14:37 -0300 7374) 		// ToDo: integer only validation!
+^b2db264153 NT/admin/darwin/src/handler/jpeg/darwjpeg.cpp 278 (seta7D5 2021-10-14 12:14:37 -0300 278)             // ToDo: allocate this at the appropriate size.
+^b2db264153 NT/admin/darwin/src/handler/jpeg/darwjpeg.cpp 289 (seta7D5 2021-10-14 12:14:37 -0300 289)             //!! ToDo: this is a problem, if we are set to use the
+^b2db264153 NT/admin/darwin/src/handler/jpeg/darwjpeg.cpp 355 (seta7D5 2021-10-14 12:14:37 -0300 355)             //!! ToDo: dont need RGBQUADs here
+^b2db264153 NT/admin/darwin/src/inc/autocom.h 817 (seta7D5 2021-10-14 12:14:37 -0300 817) 	if (!OLE::VariantTimeToDosDateTime(varTemp.date, &usDOSDate, &usDOSTime))
+^b2db264153 NT/admin/darwin/src/inc/debugerr.h 326 (seta7D5 2021-10-14 12:14:37 -0300 326) IDebugError(idbgErrorInFileToDosDateTime,     idbgFile + 26,"Error in FileToDosDateTime.")
+^b2db264153 NT/admin/darwin/src/inc/debugerr.h 326 (seta7D5 2021-10-14 12:14:37 -0300 326) IDebugError(idbgErrorInFileToDosDateTime,     idbgFile + 26,"Error in FileToDosDateTime.")
+^b2db264153 NT/admin/darwin/src/inc/common.h 58 (seta7D5 2021-10-14 12:14:37 -0300 58) //!! TODO: new build tools used for NT_BUILDTOOLS/WIN64 are much more strict
+^b2db264153 NT/admin/pchealth/helpctr/shell/intercom/client/safintercomclient.cpp 104 (seta7D5 2021-10-14 12:14:37 -0300 104) 		//TODO: Add code here for handling RTCCET_DEVICE_CHANGE (for wizard stuff)
+^b2db264153 NT/admin/pchealth/helpctr/shell/intercom/client/safintercomclient.cpp 317 (seta7D5 2021-10-14 12:14:37 -0300 317) 	// TODO: make sure we handle the case where we are shutting down.  
+^b2db264153 NT/admin/pchealth/helpctr/shell/intercom/client/safintercomclient.cpp 517 (seta7D5 2021-10-14 12:14:37 -0300 517) 			// TODO: Verify about RTCLM_BOTH
+^b2db264153 NT/admin/pchealth/helpctr/shell/intercom/server/safintercomserver.cpp 359 (seta7D5 2021-10-14 12:14:37 -0300 359) 	// TODO: make sure we handle the case where we are shutting down.  
+^b2db264153 NT/admin/pchealth/helpctr/shell/intercom/server/safintercomserver.cpp 536 (seta7D5 2021-10-14 12:14:37 -0300 536) 		// TODO: Verify about RTCLM_BOTH
+^b2db264153 NT/admin/pchealth/helpctr/shell/include/safintercomserver.h 59 (seta7D5 2021-10-14 12:14:37 -0300 59) //DECLARE_PROTECT_FINAL_CONSTRUCT()	// TODO: JP: Do we need this here?
+^b2db264153 NT/admin/pchealth/helpctr/shell/include/safintercomclient.h 55 (seta7D5 2021-10-14 12:14:37 -0300 55) //DECLARE_PROTECT_FINAL_CONSTRUCT()	// TODO: JP: Do we need this here?
+^b2db264153 NT/admin/pchealth/helpctr/shell/namespace/protocolroot.cpp 584 (seta7D5 2021-10-14 12:14:37 -0300 584)     // TODO: We could always spawn a worker thread to be more truly asynchronous.
+^b2db264153 NT/admin/pchealth/helpctr/shell/namespace/protocolroot.cpp 602 (seta7D5 2021-10-14 12:14:37 -0300 602)         // TODO: Actually, we should spawn a new worker thread and have it do the
+^b2db264153 NT/admin/pchealth/helpctr/shell/namespace/protocolroot.cpp 670 (seta7D5 2021-10-14 12:14:37 -0300 670)     // TODO: If we call Abort too early on the Binding object,
+^b2db264153 NT/admin/pchealth/helpctr/shell/namespace/protocolroot.cpp 673 (seta7D5 2021-10-14 12:14:37 -0300 673)     // TODO: Make sure we set m_pDownloader to NULL when the
+^b2db264153 NT/admin/pchealth/helpctr/rc/rctool/safrcfiledlg/fileopen.cpp 34 (seta7D5 2021-10-14 12:14:37 -0300 34) 	// TODO: Add your implementation code here
+^b2db264153 NT/admin/pchealth/helpctr/rc/rctool/safrcfiledlg/fileopen.cpp 54 (seta7D5 2021-10-14 12:14:37 -0300 54) 	// TODO: Add your implementation code here
+^b2db264153 NT/admin/pchealth/helpctr/rc/rctool/safrcfiledlg/fileopen.cpp 61 (seta7D5 2021-10-14 12:14:37 -0300 61) 	// TODO: Add your implementation code here
+^b2db264153 NT/admin/pchealth/helpctr/rc/rctool/safrcfiledlg/fileopen.cpp 69 (seta7D5 2021-10-14 12:14:37 -0300 69) 	// TODO: Add your implementation code here
+^b2db264153 NT/admin/pchealth/helpctr/rc/bdychannel/activex/smapi.cpp 252 (seta7D5 2021-10-14 12:14:37 -0300 252)                             // TODO: Need to handle this case
+^b2db264153 NT/admin/pchealth/helpctr/rc/bdychannel/activex/smapi.cpp 256 (seta7D5 2021-10-14 12:14:37 -0300 256)                             // TODO: Failed.
+^b2db264153 NT/admin/pchealth/helpctr/rc/setupnewexpert.cmd 33 (seta7D5 2021-10-14 12:14:37 -0300 33) rem	ToDo: This should be done at setup time by pchealth.inf
+^b2db264153 NT/admin/pchealth/helpctr/rc/setupimexpert.cmd 50 (seta7D5 2021-10-14 12:14:37 -0300 50) rem	ToDo: This should be done at setup time by pchealth.inf
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/escalation/helpeeaccept.htx 212 (seta7D5 2021-10-14 12:14:37 -0300 212)     // TODO: Take care of unsolicited
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/raclient.htx 79 (seta7D5 2021-10-14 12:14:37 -0300 79) var L_SAFError40_Text  = "Remote Assistance cannot connect because the request timed out. The novice did not respond within the given time frame."; // SAFERROR_HELPEENEVERRESPONDED    - TODO
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/raclient.htx 1832 (seta7D5 2021-10-14 12:14:37 -0300 1832)         sTemp += ( 6 + g_oSAFRemoteAssistanceHelper.m_szLocalUser.length ) + ";BUDDY=" + g_oSAFRemoteAssistanceHelper.m_szLocalUser; // TODO: This should not be hard coded
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/raclient.htx 1833 (seta7D5 2021-10-14 12:14:37 -0300 1833)         sTemp += 6 + ";FILE=0";             // TODO: This should not be hard coded
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/raclient.htx 2147 (seta7D5 2021-10-14 12:14:37 -0300 2147)         g_oSAFRemoteAssistanceHelper.m_szRCTicket = g_oSAFRemoteAssistanceHelper.m_szRCTicketEncrypted; // TODO: Deal with Pwd encrypted file
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/settingserver.htx 143 (seta7D5 2021-10-14 12:14:37 -0300 143) 		//TODO: code goes in here.		
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/raclient.jx 246 (seta7D5 2021-10-14 12:14:37 -0300 246) 			// TODO: Get rid of the code below. We can't special case like this.
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/raclient.jx 689 (seta7D5 2021-10-14 12:14:37 -0300 689) 				// TODO: This may not be necessary
+^b2db264153 NT/admin/pchealth/helpctr/rc/content/interaction/racontrol.jx 660 (seta7D5 2021-10-14 12:14:37 -0300 660)         // TODO: Change this to receive the KEY!!!! JP 3.5.01
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/por/ra-en.htm 44 (seta7D5 2021-10-14 12:14:37 -0300 44) 													Todos produtos
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/por/ra-en.htm 337 (seta7D5 2021-10-14 12:14:37 -0300 337) 																					<A href="http://www.microsoft.com/portugal/misc/cpyright.htm" target=_top>© 2001 Microsoft Corporation. Todos os direitos reservados. Termos de utilização.</A></TD>
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/por/text.inc 36 (seta7D5 2021-10-14 12:14:37 -0300 36) 	Const L_CopyRightMsg_Text			= "(C) 2001 Microsoft Corporation. Todos os direitos reservados. Termos de utilização."
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/spa/text.inc 36 (seta7D5 2021-10-14 12:14:37 -0300 36) 	Const L_CopyRightMsg_Text			= "(C) 2001 Microsoft Corporation. Reservados todos los derechos. Condiciones de uso."
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/spa/ra-en.htm 336 (seta7D5 2021-10-14 12:14:37 -0300 336) 																					<A href="http://www.microsoft.com/info/cpyright.htm" target=_top>© 2001 Microsoft Corporation. Reservados todos los derechos. Condiciones de Uso.</A></TD>
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/brz/text.inc 36 (seta7D5 2021-10-14 12:14:37 -0300 36) 	Const L_CopyRightMsg_Text			= "(C) 2001 Microsoft Corporation. Todos os direitos reservados. Termos de uso."
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/brz/ra-en.htm 44 (seta7D5 2021-10-14 12:14:37 -0300 44) 													Todos os produtos
+^b2db264153 NT/admin/pchealth/helpctr/rc/web/brz/ra-en.htm 334 (seta7D5 2021-10-14 12:14:37 -0300 334) 																					<A href="http://www.microsoft.com/info/cpyright.htm" target=_top>© 2001 Microsoft Corporation. Todos os direitos reservados. Termos de uso.</A></TD>
+binary file matches (found "\0" byte around offset 128151)
